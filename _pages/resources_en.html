@@ -226,26 +226,33 @@ sidebar:
 	<p>
 		The GetResource element is used to build a list of elements amongst which the user can make 
 		a choice (dropdown list, choice box or radio button). 
-		
+	</p>
+	<p>
 		The elements that will fill the dropdown list are resource elements of type
 		Item (see below) or Subsection elements and are usually created in a seperate portfolio:
-		the rubrics portfolio.
-		
-		and are created in a separate portfolio - the Rubrics Portfolio. Which elements 
-		of the Rubrics Portfolio to display in the choice box is specified in the Query metadata of the 
-		GetResource element (see METADATA).
+		the Rubrics portfolio. All elements of a dropdown list must share the same semantic tag and
+		each must have a unique code (<i>Code&nbsp;- Item</i> for Item elements and <i>Code</i> for
+		Subsection elements).
+	</p>
+	<p>
+		The Search metadata of the GetResource element is used to specify which elements of the 
+		Rubrics portfolio will populate the dropdown list (see <a href='../metadata_en/'>METADATA</a> 
+		for more detail). 
 	</p>
 </article>
 
 <article>
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='getGetResource'>GetGetResource (conditional choice box)</h3>
+	<h3 id='getGetResource'>GetGetResource (conditional dropdown list)</h3>
 	<p>
-		The GetGetResource element is a choice box whose Items are restricted by the choice a user
-		made in a previous GetResource element. The user's selection in the first choice box determines
-		which options will be displayed in the second. Which Items of the Rubrics Portfolio to 
-		display in the choice box is specified in the Query metadata of the GetGetResource element 
-		(see METADATA).
+		The GetGetResource element is used to build a dropdown list whose options are restricted by the 
+		choice made by the user in an associated GetResource element. The user's selection in the first
+		dropdown list determines which options will be displayed in the second. 
+	</p>
+	<p>
+		The Search metadata of the GetGetResource element is used to specify which elements of the 
+		Rubrics portfolio will populate the dropdown list (see <a href='../metadata_en/'>METADATA</a> 
+		for more detail). 
 	</p>
 </article>
 
