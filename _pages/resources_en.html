@@ -15,20 +15,19 @@ sidebar:
 </p>
 <p>
 	Note that the designer has all the rights on all portfolio elements while building the
-	portfolio. It is sometimes useful for the designer to pre-fill data in Resource elements to 
-	supply information to end-users (for example supply instructions or attach a file to the 
+	portfolio. It is sometimes useful for the designer to pre-fill data in resource elements to 
+	supply information to users (for example supply instructions or attach a file to the 
 	portfolio). In this case, the Edit right is generally not attributed to any role.
 </p>
 <p>
 	In the XML representation of the tree, the resource elements are the leaves of the tree.  
 </p>
 
-<p>Some of the Karuta Resource elements are:</p>
-<ul>
+<p>The available resources are:</p>
 <ul>
 	<li><code><a href='#field'>Short Text</a></code></li>
-	<li><code><a href='#textfield'>Long Text</a></code></li>
-	<li><code><a href='#comment'>Comment</a></code></li>
+	<li><code><a href='#textfield'>Long Text</a></code></li> 
+	<li><code><a href='#commentaires'>Comments</a></code></li>
 	<li><code><a href='#image'>Image</a></code></li>
 	<li><code><a href='#audio'>Audio</a></code></li>
 	<li><code><a href='#video'>Video</a></code></li>
@@ -36,16 +35,17 @@ sidebar:
 	<li><code><a href='#oembed'>oEmbed</a></code></li>
 	<li><code><a href='#url'>URL</a></code></li>
 	<li><code><a href='#url2unit'>URL2Unit</a></code></li>
-	<li><code><a href='#sendEmail'>SendEmail</a></code></li>
-	<li><code><a href='#calendar'>Calendar</a></code></li>
-	<li><code><a href='#color'>Color</a></code></li>
+	<li><code><a href='#sendEmail'>Send Email</a></code></li>
+	<li><code><a href='#date'>Calendar</a></code></li>
+	<li><code><a href='#couleur'>Color</a></code></li>
 	<li><code><a href='#dashboard'>Dashboard</a></code></li>
+	<!- ******* Deferred Report ******* ->
 	<li><code><a href='#getResource'>GetResource</a></code></li>
 	<li><code><a href='#getGetResource'>GetGetResource</a></code></li>
 	<li><code><a href='#getDoubleResource'>GetDoubleResource</a></code></li>
 	<li><code><a href='#item'>Item</a></code></li>
 	<li><code><a href='#proxy'>Proxy</a></code></li>
-</ul>
+	<!- ******* GetProxy ******* ->
 </ul>
 
 <article>
@@ -63,18 +63,23 @@ sidebar:
 	<h3 id='textfield'>Long Text</h3>
 	<p>
 		The Long Text element is used to enter a longer text. A basic text editor with simple 
-		layout options is available to the end-user with the Edit right on this element.</br>
+		layout options is available to the user with the Edit right on this element.</br>
 		This element is also useful to include instructions in the portfolio, from to designer
-		to the end-users. In this case, the Edit right is not attributed to any role.
+		to the users. In this case, the Edit right is not attributed to any role.
 	</p>
 </article>
 
 <article>
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='comment'>Comment</h3>
+	<h3 id='comment'>Comments</h3>
 	<p>
-		The Comment element is a TextField element which is signed and timestamped. The user name 
-		along with date and time are added at the end of the comment.
+		The Comments element is a Long Text which is signed and timestamped. The name of
+		the user that edits the element, along with date and time, are added at the end of the 
+		comment.
+	</p>
+	<p>
+		Usually used in combination with a user menu that allows the user to add comments as need
+		be and a submit button to keep track of the evolution of the comments.
 	</p>
 </article>
 
