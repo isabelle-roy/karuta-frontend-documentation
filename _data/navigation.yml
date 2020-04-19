@@ -473,6 +473,8 @@ resources_fr:
         url: /resources_fr/#couleur
       - title: "Tableau de bord"
         url: /resources_fr/#dashboard
+      - title: "Rapport différé"
+        url: /resources_fr/#report
       - title: "GetResource"
         url: /resources_fr/#getResource
       - title: "GetGetResource"
@@ -483,6 +485,8 @@ resources_fr:
         url: /resources_fr/#item
       - title: "Proxy"
         url: /resources_fr/#proxy
+      - title: "GetProxy"
+        url: /resources_fr/#getProxy
   - title: Métadonnées
     url: /metadata_fr/
   - title: Fonctions Menu
@@ -509,7 +513,7 @@ resources_en:
         url: /resources_en/#field
       - title: "Long Text"
         url: /resources_en/#textfield
-      - title: "Comment"
+      - title: "Comments"
         url: /resources_en/#commentaires
       - title: "Image"
         url: /resources_en/#image
@@ -527,12 +531,14 @@ resources_en:
         url: /resources_en/#url2unit
       - title: "SendEmail"
         url: /resources_en/#sendEmail
-      - title: "Calender"
+      - title: "Calendar"
         url: /resources_en/#date
-      - title: "Coulor"
+      - title: "Color"
         url: /resources_en/#couleur
       - title: "Dashboard"
         url: /resources_en/#dashboard
+      - title: "Deferred Report"
+        url: /resources_en/#report
       - title: "GetResource"
         url: /resources_en/#getResource
       - title: "GetGetResource"
@@ -543,6 +549,8 @@ resources_en:
         url: /resources_en/#item
       - title: "Proxy"
         url: /resources_en/#proxy
+      - title: "GetProxy"
+        url: /resources_en/#getProxy
   - title: Metadata
     url: /metadata_en/
   - title: CSS
