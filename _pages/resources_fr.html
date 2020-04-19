@@ -39,7 +39,7 @@ sidebar:
 	<li><code><a href='#date'>Calendrier</a></code></li>
 	<li><code><a href='#couleur'>Couleur</a></code></li>
 	<li><code><a href='#dashboard'>Tableau de bord</a></code></li>
-	<!- ******* Rapport différé ******* ->
+	<li><code><a href='#report'>Rapport différé</a></code></li>
 	<li><code><a href='#getResource'>GetResource</a></code></li>
 	<li><code><a href='#getGetResource'>GetGetResource</a></code></li>
 	<li><code><a href='#getDoubleResource'>GetDoubleResource</a></code></li>
@@ -215,6 +215,18 @@ sidebar:
 			<code>@norefresh</code> La table n'est pas mise à jour en cas de modification des données.
 		</li>
 	</ul>
+</article>
+
+<article>
+	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
+	<h3 id='report'>Rapport différé</h3>
+	<p>
+		Comme l'élément Tableau de bord, l'élément Rapport différé exécute un script de rapport et affiche 
+		la table HTML résultante. Cependant, au lieu d'être exécuté au moment d'afficher la page de 
+		portfolio, le script est exécuté à un moment et une fréquence pré-déterminé puis stocké en mémoire 
+		et c'est le résultat pré-exécuté qui est affiché au moment de charger la page. Ceci est utile pour 
+		les scripts qui sont long à exécuter, comme les rapports de cohorte.
+	</p>
 </article>
 
 <article>
