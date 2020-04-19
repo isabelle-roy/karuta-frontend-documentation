@@ -529,7 +529,7 @@ resources_en:
         url: /resources_en/#url
       - title: "URL2Unit"
         url: /resources_en/#url2unit
-      - title: "SendEmail"
+      - title: "Send Email"
         url: /resources_en/#sendEmail
       - title: "Calendar"
         url: /resources_en/#date
@@ -603,6 +603,8 @@ metadata_fr:
         url: /metadata_fr/#duplicateroles
       - title: "Modifier taille image"
         url: /metadata_fr/#resizeroles
+      - title: "Éditer cible proxy"
+        url: /metadata_fr/#edittargetroles
       - title: "Ordonner"
         url: /metadata_fr/#moveroles
       - title: "Déplacer"
@@ -667,28 +669,62 @@ metadata_en:
         url: /metadata_en/#multilingual-resource
       - title: "Encrypt Resource"
         url: /metadata_en/#encript-resource
-      - title: "Roles - See"
+      - title: "See"
         url: /metadata_en/#see
-      - title: "Roles - Delete"
+      - title: "Delete"
         url: /metadata_en/#delete
-      - title: "Roles - Edit Resource"
+      - title: "Edit Resource"
         url: /metadata_en/#edit-resource
-      - title: "Roles - Comment"
+      - title: "Resource Without Pencil"
+        url: /metadata_en/#resnopencil
+      - title: "Comment"
         url: /metadata_en/#comment
-      - title: "Roles - Submit"
+      - title: "Submit"
         url: /metadata_en/#submit
-      - title: "Query"
+      - title: "Edit Code"
+        url: /metadata_en/#editcoderoles
+      - title: "Edit Label"
+        url: /metadata_en/#editnoderoles
+      - title: "Node Without Pencil"
+        url: /metadata_en/#nodenopencil
+      - title: "Duplicate"
+        url: /metadata_en/#duplicateroles
+      - title: "Resize Image"
+        url: /metadata_en/#resizeroles
+      - title: "Edit Proxy Target"
+        url: /metadata_en/#edittargetroles
+      - title: "Ordering"
+        url: /metadata_en/#moveroles
+      - title: "Move"
+        url: /metadata_en/#moveinroles
+      - title: "Move In"
+        url: /metadata_en/#movein
+      - title: "Show/Hide"
+        url: /metadata_en/#showroles
+      - title: "Show To"
+        url: /metadata_en/#showtoroles
+      - title: "Print"
+        url: /metadata_en/#printroles
+      - title: "Editing Box Title"
+        url: /metadata_en/#editboxtitle
+      - title: "Max Number Words"
+        url: /metadata_en/#maxword
+      - title: "Visible"
+        url: /metadata_en/#display
+      - title: "Inline Editing"
+        url: /metadata_en/#inline
+      - title: "Collapsible"
+        url: /metadata_en/#collapsible
+      - title: "Search"
         url: /metadata_en/#query
-      - title: "Menu - Get_Multiple"
-        url: /metadata_en/#get_multiple
-      - title: "Menu - Get_Get_Multiple"
-        url: /metadata_en/#get_get_multiple
-      - title: "Menu - Import_Multiple"
-        url: /metadata_en/#import_multiple
-      - title: "Menu - Import_GGMultiple"
-        url: /metadata_en/#import_ggmultiple
-      - title: "Sharing by the end-user"
+      - title: "Share"
         url: /metadata_en/#sharing
+      - title: "Menus"
+        url: /metadata_en/#menu
+      - title: "Menu Button Text"
+        url: /metadata_en/#menulabels
+      - title: "Help Bubble"
+        url: /metadata_en/#help
   - title: CSS
     url: /css_en/
   - title: Sharing
