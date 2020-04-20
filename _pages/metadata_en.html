@@ -85,8 +85,8 @@ sidebar:
 		the element's purpose is and what it will contain.
 	</p>
 	<p>
-		It is the semantic tag that is used to search for an element when traversing the XML tree. It 
-		is used in the Search metadata (see below) and in the report and batch scripts.
+		It is the semantic tag that is used to search for an element in a portfolio. It is 
+		used in the Search metadata (see below) as well as in the report and batch scripts.
 	</p>
 	<p>
 		IMPORTANT: Search of a semantic tag is inclusive &mdash; for example, the search for all elements 
@@ -99,22 +99,36 @@ sidebar:
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
 	<h3 id='asmstructure'>Code</h3>
 	<p>
-		The Code of a portfolio element must be unique within this portfolio. It is used in choice boxes
-		(Get_Resource element, Get_Get_Resource element, Get_Muliple menu, Get_Get_Multiple menu and
-		Import_Multiple menu) to identify the end-user's selection.
+		A Code is attributed to Item and Subsection elements that will appear in single choice 
+		boxes (GetResource and GetGetResource elements) and multiple choice boxes (Get_Multiple and 
+		Import_Multiple functions), to identify the user's selection.
+	</p>
+	<p>
+		IMPORTANT: The code of a portfolio element must be unique within this portfolio.
 	</p>
 	<p>
 		By default, both the element's code and label are displayed in the choice box, and then only 
-		the label of the user's selection is displayed in the Resource element. This behavior may be 
-		modified by adding one or more of the following symbols to the element's code:
+		the label of the user's selection is displayed in the GetResource (or GetGetResource) element. 
+		This behavior may be modified by adding one or more of the following symbols to the element's 
+		code:
 	</p>
 	<ul>
 		<li><code>@</code> the code will not be displayed in the choice box</li>
-		<li><code>#</code> the code will be displayed in the Resource element</li>
-		<li><code>&amp;</code> the associated <b>value</b> will be visible in the Resource element 
-			(<b>Item</b> elements only)</li>
-		<li><code>%</code> the label will not be displayed in the Resource element</li>
+		<li><code>#</code> the code will be displayed in the GetResource element</li>
+		<li>
+			<code>?</code> the <i>value</i> will be displayed in the choice box 
+			(only Item elements have a field to indicate a value)
+		</li>
+		<li>
+			<code>&amp;</code> the <i>value</i> will be displayed in the GetResource 
+			element (only Item elements have a field to indicate a value)
+		</li>
 		<li><code>$</code> the label will not be displayed in the choice box</li>
+		<li><code>%</code> the label will not be displayed in the GetResource element</li>
+		<li>
+			<code>!</code> the element will not be selectable in the choice box (useful to 
+			create section titles in the choice box)
+		</li>
 	</ul>
 </article>
 

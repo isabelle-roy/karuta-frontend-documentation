@@ -101,7 +101,7 @@ sidebar:
 	<h3 id='code'>Code</h3>
 	<p>
 		Le plus souvent attribué aux éléments Item et Sous-section pour ensuite être utilisé dans les 
-		listes déroulantes (éléments Get_Resource et Get_Get_Resource) et les boîtes de choix multiples
+		listes déroulantes (éléments GetResource et GetGetResource) et les boîtes de choix multiples
 		(fonctions Get_Multiple et Import_Multiple). C'est lui qui permet d'identifier la sélection de 
 		l'utilisateur.
 	</p>
@@ -111,22 +111,22 @@ sidebar:
 	<p>
 		Par défaut le code et le libellé de l'élément apparaissent dans la liste déroulante et seul le 
 		libellé de l'option sélectionnée par l'utilisateur est ensuite afffiché dans l'élément 
-		Get_Resource (ou Get_Get_Resource). Ce comportement peut être modifié par l'ajout d'un 
+		GetResource (ou GetGetResource). Ce comportement peut être modifié par l'ajout d'un 
 		ou plusieurs des symboles suivants au code de l'élément&nbsp;:
 	</p>
 	<ul>
 		<li><code>@</code> rendra le code non visible dans la liste déroulante&nbsp;;</li>
-		<li><code>#</code> rendra le code visible dans l'élément Get_Resource&nbsp;;</li>
+		<li><code>#</code> rendra le code visible dans l'élément GetResource&nbsp;;</li>
 		<li>
-			<code>&amp;</code> rendra la valeur associée à l'élément visible dans l'élément 
-			Get_Resource (seul les éléments de type Item ont un champ pour indiquer une valeur)&nbsp;;
-		</li>
-		<li>
-			<code>?</code> rendra la valeur associée à l'élément visible dans la liste déroulante (seul 
+			<code>?</code> rendra la <i>valeur</i> visible dans la liste déroulante (seul 
 			les éléments de type Item ont un champ pour indiquer une valeur)&nbsp;;
 		</li>
-		<li><code>%</code> rendra le libellé non visible dans l'élément Get_Resource&nbsp;;</li>
+		<li>
+			<code>&amp;</code> rendra la <i>valeur</i> visible dans l'élément GetResource 
+			(seul les éléments de type Item ont un champ pour indiquer une valeur)&nbsp;;
+		</li>
 		<li><code>$</code> rendra le libellé non visible dans la liste déroulante&nbsp;;</li>
+		<li><code>%</code> rendra le libellé non visible dans l'élément GetResource&nbsp;;</li>
 		<li>
 			<code>!</code> rendra le choix non sélectionnable dans la boîte de choix multiple (utile pour
 			créer des titres de section dans la boîte de choix).
