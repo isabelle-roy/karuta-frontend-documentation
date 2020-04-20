@@ -136,15 +136,14 @@ sidebar:
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
 	<h3 id='multilingual-node'>Multilingual Node</h3>
 	<p>
-		An element's Multilingual Node attribute specifies whether the element's <b>Label</b> is multilingual
-		(in the case of multilingual Karuta installations). If it is, two different labels can be specified
-		for the element (one in each language). If it is not, the element's label will be the same 
-		independently of what language the portfolio is being viewed in (the value of the label will be 
-		stored in the language defined as default language in the configuration file _init.js).
+		Specifies whether an element's <b>label</b> has a different value in each language (if the 
+		portfolio is multilingual). If Multilingual Node is not checked, there will only be one
+		value for all languages, and that value will be stored in the default language (the default 
+		language is defined in the <i>_init.js</i> configuration file).
 	</p>
 	<p>
-		Note: the code is never multilingual. It has the same value independently of the selected viewing
-		language.
+		IMPORTANT: The code is never multilingual. It has the same value independently of the selected 
+		working	language.
 	</p>
 </article>
 
@@ -152,13 +151,14 @@ sidebar:
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
 	<h3 id='multilingual-resource'>Multilingual Resource</h3>
 	<p>	
-		An element's Multilingual Resource attribute specifies whether the data supplied for the element is 
-		multilingual (in the case of multilingual Karuta installations). If it is, two different data sets 
-		can be specified for the element (one in each language). If it is not, the element's data 
-		will be the same independently of what language the portfolio is being viewed in (the data will be 
-		stored in the language defined as default language in the configuration file _init.js).</br>
-		Example: a person's name or birthdate is usually not language dependent (not multilingual) whereas 
-		an essay or instructions are different in each language.
+		Resource elements only. Specifies whether the data in the resource element has a different value 
+		in each language (if the portfolio is multilingual). If Multilingual Resource is not checked, 
+		there will only be one value for all languages, and that value will be stored in the default 
+		language (the default language is defined in the <i>_init.js</i> configuration file).
+	</p>
+	<p>
+		For example, a name or a birth date are usually not language dependant, whereas a text that gives
+		instructions is	definitely different language specific.
 	</p>
 </article>
 
@@ -166,46 +166,59 @@ sidebar:
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
 	<h3 id='encript-resource'>Encrypt Resource</h3>
 	<p>
-		This element attribute specifies whether the data in a Resource element is encrypted. If so, 
-		a key phrase is requested from the user when they open the portfolio. This phrase is used to
-		encrypt and decrypt the data. It is not stored in the portfolio and thus must be memorized by 
-		the end-user.
+		Resource elements only. Specifies whether the data in the resource element must be encrypted.
+		If so, a key phrase is requested from the user when they open the portfolio. This phrase is used 
+		to encrypt/decrypt the data. It is not stored in the portfolio and thus must be memorized by 
+		the user, as he or she will be asked to provide it every time they want to open the portfolio.
 	</p>
 </article>
 
 <article>
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='see'>Roles - See</h3>
+	<h3 id='see'>See</h3>
 	<p>
-		The list of user roles (separated by a space character) that may see the element. For example: 
-		<i>student teacher</i>.</br>
-		By default, this right is attributed to the role <i>all</i>. It is the only right to have a
-		default value.
+		List of roles, separated by a space character, that have the right to see the element. For  
+		example: <i>student teacher</i>.
+	</p>
+	<p>
+		By default, the right to see is attributed to the role <i>all</i>, which includes all roles 
+		defined on the portfolio. This is the only right to have a default value.
 	</p>
 </article>
 
 <article>
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='delete'>Roles - Delete</h3>
-	<p>The list of user roles (separated by a space character) that may delete the element.</p>
-</article>
-
-<article>
-	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='edit-resource'>Roles - Edit Resource</h3>
+	<h3 id='delete'>Delete</h3>
 	<p>
-		The list of user roles that may enter data in the element (only for Resource elements).
+		List of roles, separated by a space character, that have the right to delete the element.
+		Displays the X button.
 	</p>
 </article>
 
 <article>
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='comment'>Roles - Comment</h3>
+	<h3 id='edit-resource'>Edit Resource</h3>
 	<p>
-		The list of user roles that may add a comment to the element. Comments are timestamped and signed 
-		with the user name. A text editor is available to the users with the correct role for the purpose
-		of comment writing.</br>
-		Note: The user role with the Comment right <b>must also have</b> the Edit Resource right on the element.
+		Resource elements only. List of roles, separated by a space character, that have the right to 
+		edit the element (store and modify data in the element). Displays the pencil button.
+	</p>
+</article>
+
+<article>
+	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
+	<h3 id='resnopencil'>Resource Without Pencil</h3>
+	<p>
+		Resource elements only. Does not display the pencil button to the roles that have the Edit 
+		Resource right. Used in combination with the Get_Multiple function (see 
+		<a href='../functions_en/'>MENU FONCTIONS</a> for details).
+	</p>
+</article>
+
+<article>
+	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
+	<h3 id='comment'>Comment</h3>
+	<p>
+		List of roles, separated by a space character, that have the right to comment	edit the element
 	</p>
 </article>
 

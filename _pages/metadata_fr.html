@@ -156,7 +156,7 @@ sidebar:
 		des valeurs différentes pour chaque langue  dans le cas où le portfolio est multilingue. Si la 
 		Ressource multilingue n'est pas coché, il y aura une seule valeur pour toutes les langues et cette 
 		valeur sera stockée dans la langue par défaut définie dans le fichier de configuration 
-		<i>_init.js</i>
+		<i>_init.js</i>.
 	</p>
 	<p>
 		Par exemple, un nom ou une date de naissance ne sont habituellement pas dépendants de la langue,
@@ -170,8 +170,8 @@ sidebar:
 	<p>
 		Spécifie si la ressource doit être encryptée. Dans le cas positif, une phrase-clé est demandée à 
 		l'utilisateur à l'ouverture du portfolio. Cette phrase-clé sert à encoder/décoder les données 
-		entrées dans la ressource. Cette phrase-clé n'est pas stockée dans Karuta et doit donc être 
-		mémorisée par l'utilisateur, car elle lui est demandée à chaque ouverture du portfolio.
+		entrées dans la ressource. Elle n'est pas stockée dans Karuta et doit donc être mémorisée par 
+		l'utilisateur, car elle lui sera demandée à chaque ouverture du portfolio.
 	</p>
 </article>
 
@@ -220,10 +220,10 @@ sidebar:
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
 	<h3 id='comment'>Commenter</h3>
 	<p>
-		Liste des rôles, séparés par un espace, ayant le droit de commenter un élément ressource. 
-		Ce droit ajoute un éditeur de texte au bas de la boîte d'édition de la ressource. Le 
-		commentaire est daté et signé du nom de l'utilisateur qui l'a écrit. Pour pouvoir commenter 
-		un élément, l'utilisateur doit également avoir le droit de Modifier la ressource.
+		Liste des rôles, séparés par un espace, ayant le droit de commenter un élément. 
+		Ce droit ajoute un éditeur de texte au bas de la boîte d'édition de l'élément. Dans les éléments
+		ressource, le commentaire est daté et signé du nom de l'utilisateur qui l'a écrit. Pour pouvoir 
+		commenter un élément, l'utilisateur doit également avoir le droit d'Éditer la ressource.
 	</p>
 	<p>
 		ASTUCE&nbsp;: Le designer peut s'attribuer le droit de commenter un élément de structure &ndash;
@@ -289,9 +289,8 @@ sidebar:
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
 	<h3 id='edittargetroles'>Éditer cible proxy</h3>
 	<p>
-		Éléments Proxy uniquement. Liste des rôles, séparés par un espace, ayant le droit d'éditer un
-		élément affiché par Proxy aisi que ses enfants. Les modifications sont automatiquement 
-		appliquées à l'élément source.
+		Éléments Proxy uniquement. Liste des rôles, séparés par un espace, ayant le droit de modifier 
+		l'élément affiché par proxy. La valeur de l'élément original est automatiquement mise à jour.
 	</p>
 </article>
 
