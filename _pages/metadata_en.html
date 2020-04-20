@@ -10,7 +10,7 @@ sidebar:
 	their behavior. 
 </p>
 <p>
-	The unique identifier is called the Semantic Tag and is used to make a reference to an element from 
+	The unique identifier is called the Semantic Tag and is used to reference an element from 
 	another element. The designer should attribute a unique identifier to every element added to a 
 	portfolio.
 </p>
@@ -24,10 +24,10 @@ sidebar:
 <p>
 	It is also in the metadata that the designer specifies which elements will populate a choice box, 
 	which users will be able to share their portfolio with another person (and under which security 
-	restrictions), specify help bubbles, etc.
+	restrictions), create help bubbles, etc.
 </p>
 <p>
-	Metadata of an element is accessed through it's editing dialog box (pencil button).
+	The metadata of an element is accessed through it's editing dialog box (pencil button).
 </p>
 
 <h2>The Metadata</h2>
@@ -79,14 +79,19 @@ sidebar:
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
 	<h3 id='semantictag'>Semantic Tag</h3>
 	<p>
-		An element's Semantic Tag expresses it's semantics. It is also the means to search for an element
-		in a portfolio: the semantic tag is used in the Query field of an element (see Query below) as well
-		as in batch and report scripts.
+		An element's Semantic Tag is it's identifier and should express it's semantics (example:
+		<i>student-profile-page</i>, <i>student-name</i>, etc). For each element he or she adds to a 
+		portfolio, the designer should replace the default semantic tag by one that expresses the semantic
+		of the element.
 	</p>
 	<p>
-		Note: search of a semantic tag is inclusive &mdash; for example, the search for all elements with
-		semantic tag "competency" will also yield all elements with the semantic tag "sub-competency", as
-		the chain of characters of the first is included in the second.
+		It is by the semantic tag that elements are searched for. It is used in the Search metadata (see 
+		below) and in the report and batch scripts.
+	</p>
+	<p>
+		IMPORTANT: Search of a semantic tag is inclusive &mdash; for example, the search for all elements 
+		with semantic tag <i>competency</i> will also yield all elements with the semantic tag 
+		<i>sub-competency<i>, as the chain of characters of the first is included in the second.
 	</p>
 </article>
 
