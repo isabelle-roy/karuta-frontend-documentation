@@ -24,17 +24,17 @@ sidebar:
 		Permet à l'utilisateur de sélectionner plusieurs éléments parmi une 
 		liste. Pour chaque élément sélectionné, une composante réutilisable est importée dans le 
 		portfolio. Un élément de cette composante est alors mis à jour avec le code et le libellé de 
-		l'élément sélectionné (en général un élément Page, Sous-section ou Get_Resource&nbsp;&ndash; dans 
-		le cas d'un Get-Resource, c'est la resource qui est mise à jour). 
+		l'élément sélectionné (en général un élément Page, Sous-section ou GetResource&nbsp;&ndash; dans 
+		le cas d'un GetResource, c'est la resource qui est mise à jour). 
 	</p>
 	<p>
 		La liste d'éléments doit exister dans un portfolio référentiel. Tous les éléments affichés dans 
 		une liste doivent partager le même tag sémantique et chacun doit avoir un code unique. 
 	</p>
 	<p>
-		Pour que l'utilisateur puisse exécuter cette opération, il doit avoir le droit de Modifier le nœud
-		ou Modifier la ressource sur la composante mise à jour (nœud si la composante mise à jour est une 
-		Page ou une Sous-section, ressource si c'est un Get_Resource).
+		Pour que l'utilisateur puisse exécuter cette opération, il doit avoir le droit d'Éditer le nœud
+		ou la ressource sur la composante mise à jour (nœud si la composante mise à jour est une 
+		Page ou une Sous-section, ressource si c'est un GetResource).
 	</p>
 	<p>
 		ASTUCE&nbsp;: Afin que l'utilisateur ne puisse pas modifier directement le nœud ou la ressource 
@@ -48,7 +48,7 @@ sidebar:
 		<li><code>function</code> Mot réservé.</li>
 		<li><code>get_multiple</code> Mot réservé.</li>
 		<li>
-			<code>recherche</code> Recherche du Get_Resource équivalent (voir section 
+			<code>recherche</code> Recherche du GetResource équivalent (voir section 
 			<a href='../metadata_fr/#query'>MÉTADONNÉES</a> pour plus de détails).
 		</li>
 		<li><code>code_portfolio.tag_sémantique</code> Composante réutilisable à importer.</li>
@@ -72,7 +72,7 @@ sidebar:
 	<h3 id='get_get_multiple'>Get_Get_Multiple</h3>
 	<p>
 		Équivalent à la fonction précédente, sauf que les choix aux utilisateurs sont restreints par la
-		sélection dans un élément parent. Il s'agit du même principe que pour l'élément Get_Get_Resource 
+		sélection dans un élément parent. Il s'agit du même principe que pour l'élément GetGetResource 
 		(voir section <a href='../resources_fr/#getGetResource'>RESSOURCES</a> pour plus de détails).
 	</p>
 	<h4>Format</h4>
@@ -83,7 +83,7 @@ sidebar:
 		<li><code>function</code> Mot réservé.</li>
 		<li><code>get_get_multiple</code> Mot réservé.</li>
 		<li>
-			<code>recherche</code> Recherche du Get_Get_Resource équivalent (voir section 
+			<code>recherche</code> Recherche du GetGetResource équivalent (voir section 
 			<a href='../metadata_fr/#query'>MÉTADONNÉES</a> pour plus de détails).
 		</li>
 		<li><code>code_portfolio.tag_sémantique</code> Composante réutilisable à importer.</li>
@@ -127,7 +127,7 @@ sidebar:
 		<li><code>function</code> Mot réservé.</li>
 		<li><code>import_multiple</code> Mot réservé.</li>
 		<li>
-			<code>recherche</code> Recherche du Get_Resource équivalent (voir section 
+			<code>recherche</code> Recherche du GetResource équivalent (voir section 
 			<a href='../metadata_fr/#query'>MÉTADONNÉES</a> pour plus de détails). Retourne une liste
 			de codes.
 		</li>
@@ -150,7 +150,7 @@ sidebar:
 		l'élément coché et le tag sémantique de l'élément importé sera <code>tag_sémantique</code>.
 		Ceci permet d'importer des éléments de plusieurs portfolios différents. Par exemple, l'utilisateur 
 		peut sélectionner plusieurs référentiels parmi une liste, puis importer les compétences de ces 
-		référentiels qui ont le <code>tag sémantique</code> dans son portfolio.
+		référentiels qui ont le <code>tag_sémantique</code> dans son portfolio.
 	</p>
 </article>
 
@@ -159,7 +159,7 @@ sidebar:
 	<h3 id='import_ggmultiple'>Import_GGMultiple</h3>
 	<p>
 		Équivalent à la fonction précédente, sauf que les choix aux utilisateurs sont restreints par la 
-		sélection dans un élément parent. Il s'agit du même principe que pour l'élément Get_Get_Resource 
+		sélection dans un élément parent. Il s'agit du même principe que pour l'élément GetGetResource 
 		(voir section <a href='../resources_fr/#getGetResource'>RESSOURCES</a>.
 	 </p>
 	<h4>Format</h4>
@@ -170,7 +170,7 @@ sidebar:
 		<li><code>function</code> Mot réservé.</li>
 		<li><code>import_ggmultiple</code> Mot réservé.</li>
 		<li>
-			<code>recherche</code> Recherche du Get_Get_Resource équivalent (voir section 
+			<code>recherche</code> Recherche du GetGetResource équivalent (voir section 
 			<a href='../metadata_fr/#query'>MÉTADONNÉES</a> pour plus de détails).
 		</li>
 		<li>
@@ -209,7 +209,7 @@ sidebar:
 	</p>
 	<p>
 		Remarque<br>
-		Ce menu se trouve sur un élément Sous-section qui contient l'élément Get_Resource (d'où l'utiliation 
+		Ce menu se trouve sur un élément Sous-section qui contient l'élément GetResource (d'où l'utiliation 
 		du mot résevé <code>child</code>). <code>referentiel</code> est à la fois le tag sémantique de
 		l'élément Get_Resource et le tag sémantique des éléments Item de la liste de référentiels. Chaque 
 	   	élément Item a pour code le code du portfolio référentiel correspondant. Les deux <code>?</code> 
@@ -241,7 +241,7 @@ sidebar:
 	<ul>
 		<li><code>function</code> Mot réservé.</li>
 		<li><code>proxy_multiple</code> Mot réservé.</li>
-			<code>recherche</code> Recherche du Get_Resource équivalent (voir section 
+			<code>recherche</code> Recherche du GetResource équivalent (voir section 
 			<a href='../metadata_fr/#query'>MÉTADONNÉES</a> pour plus de détails). Retourne une liste
 			de codes.
 		</li>
@@ -269,7 +269,7 @@ sidebar:
 		et un élément Calendrier de cette composante est mis à jour avec la date courante du système.
 	</p>
 	<p>
-		Pour que l'utilisateur puisse exécuter cette opération, il doit avoir le droit de Modifier la 
+		Pour que l'utilisateur puisse exécuter cette opération, il doit avoir le droit d'Éditer la 
 		ressource sur la composante mise à jour (l'élément Calendrier).
 	</p>
 	<p>

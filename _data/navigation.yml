@@ -585,7 +585,7 @@ metadata_fr:
         url: /metadata_fr/#see
       - title: "Supprimer"
         url: /metadata_fr/#delete
-      - title: "Modifier ressource"
+      - title: "Éditer ressource"
         url: /metadata_fr/#edit-resource
       - title: "Ressource sans crayon"
         url: /metadata_fr/#resnopencil
@@ -595,7 +595,7 @@ metadata_fr:
         url: /metadata_fr/#submit
       - title: "Éditer code"
         url: /metadata_fr/#editcoderoles
-      - title: "Modifier nœud"
+      - title: "Éditer libellé"
         url: /metadata_fr/#editnoderoles
       - title: "Nœud sans crayon"
         url: /metadata_fr/#nodenopencil
