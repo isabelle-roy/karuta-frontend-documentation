@@ -416,13 +416,34 @@ sidebar:
 	<p><code>portfolio_code</code>.<code>semantic_tag</code>.<code>label</code></p>
 	<ul>
 		<li>
-			<code>portfolio_code</code>: Code of rubrics portfolio in which to search for the specified
-			semantic tag. Format is 'project code.rubrics portfolio code'. If 'project code.' is not present, 
-			search for the rubrics portfolio will be in the current project (project containing the Get_).
+			<code>portfolio_code</code> Code of the rubrics portfolio in which to search for the elements
+			specified by the semantic tag. The format is <i>project code.rubrics portfolio code</i>. If 
+			<i>project code</i> is not present, the search for the rubrics portfolio will take place in 
+			the current project (project containing the GetResource element).
 		</li>
-		<li><code>semantic_tag</code>: Semantic tag of elements to search for in the rubrics portfolio.</li>
-		<li><code>label</code>: Reserved word.</li>
+		<li><code>semantic_tag</code> Semantic tag of elements to display in the choice box.</li>
+		<li>
+			<code>label</code> Reserved word. When searching for Item or Subsection elements (see other
+			options below).
+		</li>
 	</ul>
+	<p> 
+		Option <code>self</code><br>
+		Can remplace <code>code_portfolio</code>. In that case, the search will take place within the
+		current portfolio (portfolio containing the GetResource element).
+	</p>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<h4>Format Get_Get_ (either Get_Get_Resource or Get_Get_Multiple)</h4>
 	<p><code>portfolio_code</code>.<code>position</code>.<code>semantic_tag1</code>.<code>semantic_tag2</code>.<code>label</code>
 	</p>
