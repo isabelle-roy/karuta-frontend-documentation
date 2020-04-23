@@ -411,8 +411,7 @@ sidebar:
 	</p>
 	<h4>Format de la recherche pour un élément Get_Resource</h4>
 	<p>	
-		<code>code_portfolio</code> (ou <code>self</code>).<code>tag_sémantique</code>.<code>label</code>
-		(ou <code>text</code> ou <code>fileid</code> ou <code>resource</code>)
+		<code>code_portfolio</code>.<code>tag_sémantique</code>.<code>label</code>
 	</p>
 	<ul>
 		<li>
@@ -433,22 +432,22 @@ sidebar:
 	</ul>
 	<p> 
 		Option <code>self</code><br>
-		Peut remplacer <code>code_portfolio</code>. Dans ce cas la recherche se
-		fait à l'intérieur du portfolio courant (portfolio qui contient l'élément Get_Resource).
+		Peut remplacer <code>code_portfolio</code>. Dans ce cas la recherche se fait à l'intérieur du 
+		portfolio courant (portfolio qui contient l'élément Get_Resource).
 	</p>
 	<p> 
 		Option <code>text</code><br>
-		Peut remplacer <code>label</code> et s'applique lorsque les éléments 
-		cherchés sont de type Texte court ou Texte long. Dans ce cas c'est le texte dans la Ressource et 
-		non le libellé qui sera affiché dans la liste déroulante puis dans le Get_Ressource.
+		Peut remplacer <code>label</code> et s'applique lorsque les éléments cherchés sont de type Texte 
+		court ou Texte long. Dans ce cas c'est le texte dans la Ressource et non le libellé qui sera 
+		affiché dans la liste déroulante puis dans le Get_Ressource.
 	</p>
 	<p> 
 		Option <code>fileid</code><br>
-		Peut remplacer <code>label</code> et s'applique lorsque les éléments
-		cherchés sont de type Image. Dans ce cas c'est l'image et non le libellé qui sera affiché dans 
-		la liste déroulante puis dans le Get_Ressource. Les éléments Image doivent être déclarés à même le 
-		portfolio où se trouve l'élément Get_Ressource et non pas dans un portfolio référentiel&nbsp;; donc 
-		à utiliser en combinaison avec l'option <code>self</code>.
+		Peut remplacer <code>label</code> et s'applique lorsque les éléments cherchés sont de type Image. 
+		Dans ce cas c'est l'image et non le libellé qui sera affiché dans la liste déroulante puis dans 
+		le Get_Ressource. Les éléments Image doivent être déclarés à même le portfolio où se trouve 
+		l'élément Get_Ressource et non pas dans un portfolio référentiel&nbsp;; donc à utiliser en 
+		combinaison avec l'option <code>self</code>.
 	</p>
 	<p> 
 		Option <code>resource</code><br>
