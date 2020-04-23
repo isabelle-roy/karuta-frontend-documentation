@@ -408,16 +408,16 @@ sidebar:
 	<h3 id='query'>Query</h3>
 	<p>
 		The Query metadata is used to specify which elements will be displayed in a choice box 
-		(GetResource and GetGetResource elements), and to specify the target of a Proxy element 
-		 (see <a href='../resources_en/'>RESOURCES</a> for details on GetResource, GetGetResource 
-		 and Proxy elements).
+		(GetResource and GetGetResource elements), as well as to specify the target of a Proxy 
+		element (see <a href='../resources_en/'>RESOURCES</a> for details on GetResource, 
+		GetGetResource and Proxy elements).
 	</p>
 	<h4>Query Format for GetResource element</h4>
 	<p><code>portfolio_code</code>.<code>semantic_tag</code>.<code>label</code></p>
 	<ul>
 		<li>
 			<code>portfolio_code</code> Code of the rubrics portfolio in which to search for the elements
-			specified by the semantic tag. The format is <i>project code.rubrics portfolio code</i>. If 
+			to display in the choice box. The format is <i>project code.rubrics portfolio code</i>. If 
 			<i>project code</i> is not present, the search for the rubrics portfolio will take place in 
 			the current project (project containing the GetResource element).
 		</li>
@@ -429,20 +429,31 @@ sidebar:
 	</ul>
 	<p> 
 		Option <code>self</code><br>
-		Can remplace <code>code_portfolio</code>. In that case, the search will take place within the
+		Can replace <code>code_portfolio</code>. In that case, the search will take place within the
 		current portfolio (portfolio containing the GetResource element).
 	</p>
+	<p> 
+		Option <code>text</code><br>
+		Can replace <code>label</code> if the elements searched for are Long Text or Short Text elements.
+		In that case, it is the text in the resource (instead of the label) that will be displayed in the 
+		choice box and then in the GetResource element.
+	</p>
+	<p> 
+		Option <code>fileid</code><br>
+		Can replace <code>label</code> if the elements searched for are Image elements. In that case, 
+		it is the image in the resource (instead of the label) that will be displayed in the choice 
+		box and then in the GetResource element. The Image elements must be created inside the same 
+		portfolio as the GetResource element; hence to be used in combination with the <code>self</code> 
+		option.
+	</p>
+	<p> 
+		Can replace <code>label</code> if the elements searched for are Item elements. In that case, 
+		the GetResource element will be updated if the selected Item element is modified. The Item 
+		elements must be created inside the same portfolio as the GetResource element; hence to be used 
+		in combination with the <code>self</code> option.
+	</p>
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+----------------------------------------------	
 	
 	<h4>Format Get_Get_ (either Get_Get_Resource or Get_Get_Multiple)</h4>
 	<p><code>portfolio_code</code>.<code>position</code>.<code>semantic_tag1</code>.<code>semantic_tag2</code>.<code>label</code>
