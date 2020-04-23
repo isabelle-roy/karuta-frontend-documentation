@@ -412,6 +412,7 @@ sidebar:
 		element (see <a href='../resources_en/'>RESOURCES</a> for details on GetResource, 
 		GetGetResource and Proxy elements).
 	</p>
+	
 	<h4>Query Format for GetResource elements</h4>
 	<p><code>portfolio_code</code>.<code>semantic_tag</code>.<code>label</code></p>
 	<ul>
@@ -477,6 +478,7 @@ sidebar:
 		<li><code>semantic_tag2</code> Semantic tag of the elements to display in the choice box.</li>
 		<li><code>label</code> Reserved word.</li>
 	</ul>
+	
 	<h4>Query Format for Proxy elements</h4>
 	<p><code>portfolio_code</code>.<code>semantic_tag</code>.<code>label</code></p>
 	<ul>
@@ -492,75 +494,89 @@ sidebar:
 	</ul>
 </article>
 
--------------------------------------------
 <article>
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='get_multiple'>Menu - Get_Multiple</h3>
+	<h3 id='sharing'>Share</h3>
 	<p>
-		This function allows the user to select multiple items from a list. For each item selected by the 
-		user, an reusable component is added to the portfolio. This component is usualy a Get_Resource element, 
-		but it may also be a structural element containing, amongst other things, the Get_Resource element. In
-		any case, the user's choice is set by Karuta in the Get_Resource element.
+		The Share metadata is used to allow users to send a third party an email with a hyperlink
+		that shares part or all of their portfolio with this person.
 	</p>
-	<h4>Format</h4>
+	
+	<h4>Share Format</h4>
 	<p>
-		<code>function</code>,<code>get_multiple</code>/<code>query</code>/<code>portfolio_code.semantic_tag
-		</code>/<code>get_resource_semantic_tag</code>,<code>label@en</code>,<code>roles</code>
-	</p>
-	<ul>
-		<li><code>function</code>: Reserved word.</li>
-		<li><code>get_multiple</code>: Reserved word.</li>
-		<li><code>query</code>: Query of the Get_Resource element (see Query above).</li>
-		<li>
-			<code>portfolio_code.semantic_tag</code>: Reusable component to add to the portfolio 
-			 (Get-Resource element or more complex component containing the Get_Resource element).
-		</li>
-		<li><code>get_resource_semantic_tag</code>: Semantic tag of the Get_Resource element.</li>
-		<li><code>label@en</code>: User menu label.</li>
-		<li><code>roles</code>: List of roles that have this menu (separated by a space character).</li>
-	</ul>
-</article>
-
-<article>
-	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='get_get_multiple'>Menu - Get_Get_Multiple</h3>
-	<p>
-		Same as the previous function, except the choices available to the user in the list are restricted 
-		by the selection in a parent element (as in Get_Get_Resource elements).
-	</p>
-	<h4>Format</h4>
-	<p>
-		<code>function</code>,<code>get_get_multiple</code>/<code>query</code>/<code>
-		portfolio_code.semantic_tag</code>/<code>get_get_resource_semantic_tag</code>,
-		<code>label@en</code>,<code>roles</code>
+		<code>role that shares</code>,<code>role of visitor</code>,<code>recipients' roles or 
+		emails</code>,<code>security level</code>,<code>link lifespan</code>,<code>button 
+		label</code>@en[,<code>condition</code>]
 	</p>
 	<ul>
-		<li><code>function</code>: Reserved word.</li>
-		<li><code>get_get_multiple</code>: Reserved word.</li>
-		<li><code>query</code> : Query of the Get_Get_Resource element.</li>
+		<li><code>role that shares</code> Role of user that can share (will have the sharing button).</li>
+		<li><code>role of visitor</code> Role the recipient will have in the portfolio.</li>
 		<li>
-			<code>portfolio_code.semantic_tag</code>: Reusable component to add to the portfolio 
-			(Get_Get_Resource element or more complex component containing the Get_Get_Resource element).
+			<code>recipients' roles or emails</code> Roles or emails of recipients. If it is a role, 
+			all users who have been shared with the portfolio in this role will receive an email.
 		</li>
-		<li><code>get_get_resource_semantic_tag</code>: Semantic tag of the Get_Get_Resource element.</li>
-		<li><code>label@en</code>: User menu label.</li>
-		<li><code>roles</code>: List of roles that have this menu (separated by a space character).</li>
+		<li><code>security level</code> 0 to 4 (see security level descriptions below).</li>
+		<li>
+			<code>link lifespan</code> In hours. After this time, the link in the email will be
+			deactivated.
+		</li>
+		<li>
+			<code>button label</code> Label that will appear on the sharing button. Append with @en
+			for English.
+		</li>
+		<li>
+			<code>condition</code> Optionnal. Condition for the sharing button to be available to
+			the user. Example: <i>submitted=='Y'</i>.
+		</li>
 	</ul>
+	
+	<h4>Security Levels</h4>
+	<p>
+		Level 0 – Karuta user<br>
+		The email's recipient has a Karuta account and the portfolio is already shared with him or 
+		her in the appropriate role. Karuta will require their password if they are not already 
+		logged in.
+	</p>
+	<p>
+		Level 1<br>
+		The email's recipient has a Karuta account and the portfolio is already shared with him or 
+		her in the appropriate role. Karuta will not require their password (if they are not already
+		logged in, a temporary password will be created). For security purposes, there should be a
+		<i>Submit</i> button on the elements the visitor can edit.
+	</p>
+	<p>
+		Level 2<br>
+		The email's recipient has a Karuta account but the portfolio is not shared with them. Karuta
+		will share the portfolio with the user in the appropriate role. If they are not already logged 
+		in, a temporary password will be created. For security purposes, there should be a <i>Submit</i> 
+		button on the elements the visitor can edit.
+	</p>
+	<p>
+		Level 3<br>
+		If the email's recipient doesn't have a Karuta account, a temporary user ID will be created.
+		Karuta will share the portfolio with the user in the appropriate role. 
+		For security purposes, there should be a <i>Submit</i> button on the elements the 
+		visitor can edit.
+	</p>
+	<p>
+		Level 4 - public link<br>
+		If the email's recipient doesn't have a Karuta account, a temporary user ID will be created.
+		The user's role is <i>all</li>: can see but cannot edit. At the moment of instanciation of 
+		the portfolio, the <i>all</li> role must be shared with the <i>public</li> user.
+	</p>
 </article>
 
 <article>
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='import_multiple'>Menu - Import_Multiple</h3>
+	<h3 id='menu'>Menus</h3>
 </article>
 
 <article>
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='import_ggmultiple'>Menu - Import_GGMultiple</h3>
+	<h3 id='menulabels'>Menu Button Text</h3>
 </article>
 
 <article>
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='sharing'>Sharing by the end-user</h3>
+	<h3 id='help'>Help Bubble</h3>
 </article>
-
-
