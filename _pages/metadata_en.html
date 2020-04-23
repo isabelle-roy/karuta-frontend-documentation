@@ -15,7 +15,7 @@ sidebar:
 	to a portfolio.
 </p>
 <p>
-	The next step is to specify the behavior of each of these elements. For example, in the case of 
+	The next step is to specify the behavior of the element. For example, in the case of 
 	structural elements (Section, Page, Subsection), the designer may specify menus that allow the 
 	user to add elements to his or her portfolio. In the case of resources (the elements that contain 
 	the data), the designer can associate roles to each right, hence specifying who can do what on 
@@ -85,8 +85,8 @@ sidebar:
 		the element's purpose is and what it will contain.
 	</p>
 	<p>
-		It is the semantic tag that is used to search for an element in a portfolio. It is 
-		used in the Search metadata (see below) as well as in the report and batch scripts.
+		The semantic tag is used to search for an element in a portfolio. It is used in the Search 
+		metadata (see below) as well as in the report and batch scripts.
 	</p>
 	<p>
 		IMPORTANT: Search of a semantic tag is inclusive &mdash; for example, the search for all elements 
@@ -99,9 +99,9 @@ sidebar:
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
 	<h3 id='asmstructure'>Code</h3>
 	<p>
-		A Code is attributed to Item and Subsection elements that will appear in single choice 
+		Most often attributed to Item and Subsection elements that will appear in single choice 
 		boxes (GetResource and GetGetResource elements) and multiple choice boxes (Get_Multiple and 
-		Import_Multiple functions), to identify the user's selection.
+		Import_Multiple functions). It is by the code that the user's selection is identified.
 	</p>
 	<p>
 		IMPORTANT: The code of a portfolio element must be unique within this portfolio.
@@ -158,7 +158,7 @@ sidebar:
 	</p>
 	<p>
 		For example, a name or a birth date are usually not language dependant, whereas a text that gives
-		instructions is	definitely different language specific.
+		instructions is	definitely language specific.
 	</p>
 </article>
 
@@ -169,7 +169,7 @@ sidebar:
 		Resource elements only. Specifies whether the data in the resource element must be encrypted.
 		If so, a key phrase is requested from the user when they open the portfolio. This phrase is used 
 		to encrypt/decrypt the data. It is not stored in the portfolio and thus must be memorized by 
-		the user, as he or she will be asked to provide it every time they want to open the portfolio.
+		the user, as he or she will be asked to provide it every time they open the portfolio.
 	</p>
 </article>
 
@@ -209,8 +209,8 @@ sidebar:
 	<h3 id='resnopencil'>Resource Without Pencil</h3>
 	<p>
 		Resource elements only. Does not display the pencil button to the roles that have 
-		the Edit Resource right. Used in combination with the Import_Multiple function (see 
-		<a href='../functions_en/'>MENU FONCTIONS</a> for details).
+		the Edit Resource right. Used in combination with the Import_Multiple and Get_Multiple 
+		functions (see <a href='../functions_en/'>MENU FONCTIONS</a> for details).
 	</p>
 </article>
 
@@ -220,7 +220,7 @@ sidebar:
 	<p>
 		List of roles, separated by a space character, that have the right to comment the element.
 		Adds a text editor at the bottom of the element's editing box. In the case of resource 
-		elements, the comment is timestamped and signed with the user name. The user must also have 
+		elements, the comment is timestamped and signed with the user's name. The user must also have 
 		the Edit Resource right on the element.
 	</p>
 	<p>
@@ -262,8 +262,8 @@ sidebar:
 	<h3 id='nodenopencil'>Node Without Pencil</h3>
 	<p>
 		Does not display the pencil button to the roles that have the Edit 
-		Label right. Used in combination with the Get_Multiple function (see 
-		<a href='../functions_en/'>MENU FONCTIONS</a> for details).
+		Label right. Used in combination with the Import_Multiple and Get_Multiple 
+		functions (see <a href='../functions_en/'>MENU FONCTIONS</a> for details).
 	</p>
 </article>
 
