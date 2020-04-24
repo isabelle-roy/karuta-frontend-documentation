@@ -414,15 +414,15 @@ sidebar:
 	</p>
 	
 	<h4>Query Format for GetResource elements</h4>
-	<p><code>portfolio_code</code>.<code>semantic_tag</code>.<code>label</code></p>
+	<p><code>portfolio code</code>.<code>semantic tag</code>.<code>label</code></p>
 	<ul>
 		<li>
-			<code>portfolio_code</code> Code of the rubrics portfolio in which to search for the elements
+			<code>portfolio code</code> Code of the rubrics portfolio in which to search for the elements
 			to display in the choice box. The format is <i>project code.rubrics portfolio code</i>. If 
 			<i>project code</i> is not present, the search for the rubrics portfolio will take place in 
 			the current project (project containing the GetResource element).
 		</li>
-		<li><code>semantic_tag</code> Semantic tag of the elements to display in the choice box.</li>
+		<li><code>semantic tag</code> Semantic tag of the elements to display in the choice box.</li>
 		<li>
 			<code>label</code> Reserved word. When searching for Item or Subsection elements (see other
 			options below).
@@ -430,7 +430,7 @@ sidebar:
 	</ul>
 	<p> 
 		Option <code>self</code><br>
-		Can replace <code>portfolio_code</code>. In that case, the search will take place within the
+		Can replace <code>portfolio code</code>. In that case, the search will take place within the
 		current portfolio (portfolio containing the GetResource element).
 	</p>
 	<p> 
@@ -456,12 +456,13 @@ sidebar:
 	
 	<h4>Query Format for GetGetResource elements</h4>
 	<p>
-		<code>portfolio_code</code>.<code>position</code>.<code>semantic_tag1</code>.<code>semantic_tag2</code>.<code>label</code>
+		<code>portfolio code</code>.<code>position</code>.<code>semantic tag1</code>.<code>semantic 
+		tag2</code>.<code>label</code>
 	</p>
 	<ul>
 		<li>
-			<code>portfolio_code</code> Code of the rubrics portfolio in which to search for the elements
-			specified by <code>semantic_tag2</code>. The format is <i>project code.rubrics portfolio 
+			<code>portfolio code</code> Code of the rubrics portfolio in which to search for the elements
+			specified by <code>semantic tag2</code>. The format is <i>project code.rubrics portfolio 
 			code</i>. If <i>project code</i> is not present, the search for the rubrics portfolio will 
 			take place in the current project (project containing the GetGetResource element).
 		</li>
@@ -472,22 +473,22 @@ sidebar:
 			<i>parent.parent.parent</i>.
 		</li>
 		<li>
-			<code>semantic_tag1</code> Semantic tag of the parent element (restricts the search to the 
+			<code>semantic tag1</code> Semantic tag of the parent element (restricts the search to the 
 			children of this parent).
 		</li>
-		<li><code>semantic_tag2</code> Semantic tag of the elements to display in the choice box.</li>
+		<li><code>semantic tag2</code> Semantic tag of the elements to display in the choice box.</li>
 		<li><code>label</code> Reserved word.</li>
 	</ul>
 	
 	<h4>Query Format for Proxy elements</h4>
-	<p><code>portfolio_code</code>.<code>semantic_tag</code>.<code>label</code></p>
+	<p><code>portfolio code</code>.<code>semantic tag</code>.<code>label</code></p>
 	<ul>
 		<li>
-			<code>portfolio_code</code> Code of the portfolio in which to search for the target to 
+			<code>portfolio code</code> Code of the portfolio in which to search for the target to 
 			display.
 		</li>
 		<li>
-			<code>semantic_tag</code> Semantic tag of the elements amongst which to choose the target
+			<code>semantic tag</code> Semantic tag of the elements amongst which to choose the target
 			to display.
 		</li>
 		<li><code>label</code> Reserved word.</li>
@@ -585,9 +586,26 @@ sidebar:
 		model to another.
 	</p>
 	<p>
-		Karuta also has various pre-programmed functions that are used through the Menu metadata.
-		See the <a href='../functions_en/'>MENU FONCTIONS</a> page for details.
+		Karuta also has various pre-programmed functions that can be called through the Menu metadata.
+		See the <a href='../functions_en/'>MENU FONCTIONS</a> page for complete specification.
 	</p>
+	
+	<h4>Menu Format</h4>
+	<p>
+		<code>portfolio code</code>,<code>semantic tag</code>,<code>menu 
+		label</code>@en,<code>roles</code>[;other menus]
+	</p>
+	<ul>
+		<li><code>portfolio code</code> Code of the portfolio from which to import the component</li>
+		<li><code>semantic tag</code> Semantic tag of the component to import</li>
+		<li>
+			<code>menu label</code> Label that will appear on the menu button. Append with @en for 
+			English.</li>
+		<li>
+			<code>roles</code> List of roles, separated by a space character, that will have the menu 
+			element.
+		</li>
+	</ul>
 </article>
 
 <article>
