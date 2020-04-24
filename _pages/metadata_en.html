@@ -412,6 +412,7 @@ sidebar:
 		element (see <a href='../resources_en/'>RESOURCES</a> for details on GetResource, 
 		GetGetResource and Proxy elements).
 	</p>
+	
 	<h4>Query Format for GetResource elements</h4>
 	<p><code>portfolio_code</code>.<code>semantic_tag</code>.<code>label</code></p>
 	<ul>
@@ -477,6 +478,7 @@ sidebar:
 		<li><code>semantic_tag2</code> Semantic tag of the elements to display in the choice box.</li>
 		<li><code>label</code> Reserved word.</li>
 	</ul>
+	
 	<h4>Query Format for Proxy elements</h4>
 	<p><code>portfolio_code</code>.<code>semantic_tag</code>.<code>label</code></p>
 	<ul>
@@ -486,81 +488,16 @@ sidebar:
 		</li>
 		<li>
 			<code>semantic_tag</code> Semantic tag of the elements amongst which to choose the target
-			to dispaly.
+			to display.
 		</li>
 		<li><code>label</code> Reserved word.</li>
 	</ul>
 </article>
 
--------------------------
 <article>
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='get_multiple'>Menu - Get_Multiple</h3>
+	<h3 id='sharing'>Share</h3>
 	<p>
-		This function allows the user to select multiple items from a list. For each item selected by the 
-		user, an reusable component is added to the portfolio. This component is usualy a Get_Resource element, 
-		but it may also be a structural element containing, amongst other things, the Get_Resource element. In
-		any case, the user's choice is set by Karuta in the Get_Resource element.
+		
 	</p>
-	<h4>Format</h4>
-	<p>
-		<code>function</code>,<code>get_multiple</code>/<code>query</code>/<code>portfolio_code.semantic_tag
-		</code>/<code>get_resource_semantic_tag</code>,<code>label@en</code>,<code>roles</code>
-	</p>
-	<ul>
-		<li><code>function</code>: Reserved word.</li>
-		<li><code>get_multiple</code>: Reserved word.</li>
-		<li><code>query</code>: Query of the Get_Resource element (see Query above).</li>
-		<li>
-			<code>portfolio_code.semantic_tag</code>: Reusable component to add to the portfolio 
-			 (Get-Resource element or more complex component containing the Get_Resource element).
-		</li>
-		<li><code>get_resource_semantic_tag</code>: Semantic tag of the Get_Resource element.</li>
-		<li><code>label@en</code>: User menu label.</li>
-		<li><code>roles</code>: List of roles that have this menu (separated by a space character).</li>
-	</ul>
 </article>
-
-<article>
-	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='get_get_multiple'>Menu - Get_Get_Multiple</h3>
-	<p>
-		Same as the previous function, except the choices available to the user in the list are restricted 
-		by the selection in a parent element (as in Get_Get_Resource elements).
-	</p>
-	<h4>Format</h4>
-	<p>
-		<code>function</code>,<code>get_get_multiple</code>/<code>query</code>/<code>
-		portfolio_code.semantic_tag</code>/<code>get_get_resource_semantic_tag</code>,
-		<code>label@en</code>,<code>roles</code>
-	</p>
-	<ul>
-		<li><code>function</code>: Reserved word.</li>
-		<li><code>get_get_multiple</code>: Reserved word.</li>
-		<li><code>query</code> : Query of the Get_Get_Resource element.</li>
-		<li>
-			<code>portfolio_code.semantic_tag</code>: Reusable component to add to the portfolio 
-			(Get_Get_Resource element or more complex component containing the Get_Get_Resource element).
-		</li>
-		<li><code>get_get_resource_semantic_tag</code>: Semantic tag of the Get_Get_Resource element.</li>
-		<li><code>label@en</code>: User menu label.</li>
-		<li><code>roles</code>: List of roles that have this menu (separated by a space character).</li>
-	</ul>
-</article>
-
-<article>
-	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='import_multiple'>Menu - Import_Multiple</h3>
-</article>
-
-<article>
-	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='import_ggmultiple'>Menu - Import_GGMultiple</h3>
-</article>
-
-<article>
-	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='sharing'>Sharing by the end-user</h3>
-</article>
-
-
