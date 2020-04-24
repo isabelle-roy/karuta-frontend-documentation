@@ -337,7 +337,7 @@ portfolio_en:
     url: /metadata_en/
   - title: CSS
     url: /css_en/
-  - title: Sharing
+  - title: User Sharing
     url: /sharing_en/
   - title:
     children:
@@ -393,7 +393,7 @@ structures_en:
     url: /metadata_en/
   - title: CSS
     url: /css_en/
-  - title: Sharing
+  - title: User Sharing
     url: /sharing_en/
   - title:
     children:
@@ -431,7 +431,7 @@ sharing_en:
     url: /metadata_en/
   - title: CSS
     url: /css_en/
-  - title: Sharing
+  - title: User Sharing
     url: /sharing_en/
   - title:
     children:
@@ -554,7 +554,7 @@ resources_en:
   - title: Metadata
     url: /metadata_en/
   - title: CSS
-  - title: Sharing
+  - title: User Sharing
     url: /sharing_en/
     url: /css_en/
   - title:
@@ -727,7 +727,7 @@ metadata_en:
         url: /metadata_en/#help
   - title: CSS
     url: /css_en/
-  - title: Sharing
+  - title: User Sharing
     url: /sharing_en/
   - title:
     children:
@@ -801,7 +801,7 @@ css_en:
     url: /metadata_en/
   - title: CSS
     url: /css_en/
-  - title: Sharing
+  - title: User Sharing
     url: /sharing_en/
   - title:
     children:
@@ -839,7 +839,7 @@ autocreate_en:
     url: /metadata_en/
   - title: CSS
     url: /css_en/
-  - title: Sharing
+  - title: User Sharing
     url: /sharing_en/
   - title:
     children:
