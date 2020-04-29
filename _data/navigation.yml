@@ -835,6 +835,8 @@ css_en:
     url: /resources_en/
   - title: Metadata
     url: /metadata_en/
+  - title: Menu Functions 
+    url: /functions_en/
   - title: CSS
     url: /css_en/
   - title: User Sharing
@@ -863,7 +865,7 @@ autocreate_fr:
   - title:
     children:
       - title: "English"
-        url: /css_en/
+        url: /autocreate_en/
         
 # ====== AUTOCREATE_EN =============
 autocreate_en:
@@ -873,6 +875,8 @@ autocreate_en:
     url: /resources_en/
   - title: Metadata
     url: /metadata_en/
+  - title: Menu Functions 
+    url: /functions_en/
   - title: CSS
     url: /css_en/
   - title: User Sharing
@@ -880,5 +884,5 @@ autocreate_en:
   - title:
     children:
       - title: "Français"
-        url: /css_fr/
+        url: /autocreate_fr/
 
