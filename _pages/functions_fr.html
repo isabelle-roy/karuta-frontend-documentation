@@ -293,26 +293,26 @@ sidebar:
 		après l'import, cocher la métadonnée Ressource sans crayon.
 	</p>
 	<h4>Format</h4>
-	<p><code>function</code>,<code>importAndSetDateToday</code>/<code>code_portfolio</code>/<code>tag_sémantique_composante</code>/<code>tag_sémantique_calendrier</code>,<code>libellé</code>@fr,<code>rôles</code>
+	<p>
+		<code>function</code>,<code>importAndSetDateToday</code>/<code>code 
+		portfolio</code>/<code>tag sémantique composante</code>/<code>tag sémantique 
+		calendrier</code>,<code>libellé</code>,<code>rôle(s)</code>
 	</p>
 	<ul>
 		<li><code>function</code> Mot réservé.</li>
 		<li><code>importAndSetDateToday</code> Mot réservé.</li>
 		<li>
-			<code>code_portfolio</code> Code du portfolio de composantes réutilisables où se trouve la 
-			composante à importer.
+			<code>code portfolio</code> Code du portfolio de composantes réutilisables où se trouve 
+			la composante à importer.
 		</li>
-		<li><code>tag_sémantique_composante</code> Composante réutilisable à importer.</li>
+		<li><code>tag sémantique composante</code> Composante réutilisable à importer.</li>
 		<li>
-			<code>tag_sémantique_calendrier</code> Élément Calendrier à mettre à jour avec la date 
+			<code>tag sémantique calendrier</code> Élément Calendrier à mettre à jour avec la date 
 			courante.
 		</li>
+		<li><code>libellé</code> Libellé de l'élément de menu. Suffixer de @fr pour français.</li>
 		<li>
-			<code>libellé</code> Libellé du bouton pour l'élément de menu. Suffixer de @fr pour 
-			français.
-		</li>
-		<li>
-			<code>rôles</code> Liste des rôles, séparés par un espace, ayant l'élément de menu.
+			<code>rôle(s)</code> Liste des rôles, séparés par un espace, ayant l'élément de menu.
 		</li>
 	</ul>
 </article>
@@ -324,9 +324,13 @@ sidebar:
 		Permet de créer un bouton pour que l'utilisateur bascule un élément de son portfolio entre deux 
 		endroits prédéterminés. À chaque exécution, la destination et le point de départ sont inversés.
 	</p>
+	<p>
+		Par exemple, permettre à l'utilisateur de basculer une expérience ou un diplôme entre les sections
+		Présent et Passé de son portfolio.
+	</p>
 	<h4>Format</h4>
 	<p>
-		<code>function</code>,<code>moveTO</code>/<code>destination</code>/<code>départ</code>,<code>libellé</code>@fr,<code>rôles</code>
+		<code>function</code>,<code>moveTO</code>/<code>destination</code>/<code>départ</code>,<code>libellé</code>,<code>rôle(s)</code>
 	</p>
 	<ul>
 		<li><code>function</code> Mot réservé.</li>
@@ -338,7 +342,7 @@ sidebar:
 			<code>départ</code> Tag sémantique de la Section, Page ou Sous-section du point de départ.
 		</li>
 		<li><code>libellé</code> Libellé du bouton pour la bascule. Suffixer de @fr pour français.</li>
-		<li><code>rôles</code> Liste des rôles, séparés par un espace, ayant le bouton.</li>
+		<li><code>rôle(s)</code> Liste des rôles, séparés par un espace, ayant le bouton.</li>
 	</ul>
 </article>
 
@@ -346,9 +350,9 @@ sidebar:
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
 	<h3 id='execReport_BatchCSV'>ExecReport_BatchCSV</h3>
 	<p>
-		Exécute un script de rapport sur les données du portfolio courant, construit avec
-		les données résultantes un fichier CSV temporaire, puis fournit ce fichier en entrée à un script 
-		de batch.
+		Exécute un script de rapport sur les données du portfolio courant (portfolio où se trouve l'appel
+		à la fonction), construit avec les données résultantes un fichier CSV temporaire, puis fournit ce 
+		fichier en entrée à un script de batch.
 	</p>
 	<p>
 		Cette fonction permet de créer un portfolio de gestion de cohorte pour un utilisateur qui doit 
@@ -358,7 +362,7 @@ sidebar:
 	<p>
 		Pour ce faire, le script de rapport, au lieu de faire de l'affichage à l'écran, doit écrire dans 
 		un fichier CSV. Ceci est permis par les éléments <code>Ligne CSV</code> et <code>Valeur CSV</code>
-		(voir la section <a href='../report_fr/#commandesCSV'>Commandes CSV</a> de la section Rapport pour 
+		(voir la section <a href='../report_fr/#commandesCSV'>Commandes CSV</a> de la page Rapport pour 
 		plus de détails.) 
 	</p>
 	<p>
@@ -366,14 +370,13 @@ sidebar:
 	</p>
 	<h4>Format</h4>
 	<p>
-		<code>function</code>,<code>execReport_BatchCSV</code>/<code>code_rapport</code>,<code>libellé</code>@fr,<code>rôles</code>
+		<code>function</code>,<code>execReport_BatchCSV</code>/<code>code 
+		rapport</code>,<code>libellé</code>,<code>rôles</code>
 	</p>
 	<ul>
 		<li><code>function</code> Mot réservé.</li>
 		<li><code>execReport_BatchCSV</code> Mot réservé.</li>
-		<li>
-			<code>code_rapport</code> Code du portfolio script de rapport.
-		</li>
+		<li><code>code rapport</code> Code du portfolio Rapport (contient le script de rapport).</li>
 		<li>
 			<code>libellé</code> Libellé du bouton pour lancer l'exécution. Suffixer de @fr pour français.
 		</li>
