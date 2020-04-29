@@ -335,6 +335,8 @@ portfolio_en:
     url: /resources_en/
   - title: Metadata
     url: /metadata_en/
+  - title: Menu Functions 
+    url: /functions_en/
   - title: CSS
     url: /css_en/
   - title: User Sharing
@@ -391,6 +393,8 @@ structures_en:
     url: /resources_en/
   - title: Metadata
     url: /metadata_en/
+  - title: Menu Functions 
+    url: /functions_en/
   - title: CSS
     url: /css_en/
   - title: User Sharing
@@ -429,6 +433,8 @@ sharing_en:
     url: /resources_en/
   - title: Metadata
     url: /metadata_en/
+  - title: Menu Functions 
+    url: /functions_en/
   - title: CSS
     url: /css_en/
   - title: User Sharing
@@ -553,10 +559,12 @@ resources_en:
         url: /resources_en/#getProxy
   - title: Metadata
     url: /metadata_en/
+  - title: Menu Functions 
+    url: /functions_en/
   - title: CSS
+    url: /css_en/
   - title: User Sharing
     url: /sharing_en/
-    url: /css_en/
   - title:
     children:
       - title: "Français"
@@ -725,6 +733,8 @@ metadata_en:
         url: /metadata_en/#menulabels
       - title: "Help Bubble"
         url: /metadata_en/#help
+  - title: Menu Functions 
+    url: /functions_en/
   - title: CSS
     url: /css_en/
   - title: User Sharing
