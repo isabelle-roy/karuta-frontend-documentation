@@ -316,12 +316,12 @@ portfolio_fr:
     url: /metadata_fr/
   - title: Fonctions Menu
     url: /functions_fr/
-  - title: Mise en forme (CSS)
-    url: /css_fr/
   - title: Partage par l'utilisateur
     url: /sharing_fr/
   - title: Création automatique
     url: /autocreate_fr/
+  - title: Mise en forme (CSS)
+    url: /css_fr/
   - title:
     children:
       - title: "English"
@@ -337,10 +337,12 @@ portfolio_en:
     url: /metadata_en/
   - title: Menu Functions 
     url: /functions_en/
-  - title: CSS
-    url: /css_en/
   - title: User Sharing
     url: /sharing_en/
+  - title: Autocreate
+    url: /autocreate_en/
+  - title: CSS
+    url: /css_en/
   - title:
     children:
       - title: "Français"
@@ -365,12 +367,12 @@ structures_fr:
     url: /metadata_fr/
   - title: Fonctions Menu
     url: /functions_fr/
-  - title: Mise en forme (CSS)
-    url: /css_fr/
   - title: Partage par l'utilisateur
     url: /sharing_fr/
   - title: Création automatique
     url: /autocreate_fr/
+  - title: Mise en forme (CSS)
+    url: /css_fr/
   - title:
     children:
       - title: "English"
@@ -395,10 +397,12 @@ structures_en:
     url: /metadata_en/
   - title: Menu Functions 
     url: /functions_en/
-  - title: CSS
-    url: /css_en/
   - title: User Sharing
     url: /sharing_en/
+  - title: Autocreate
+    url: /autocreate_en/
+  - title: CSS
+    url: /css_en/
   - title:
     children:
       - title: "Français"
@@ -414,12 +418,12 @@ sharing_fr:
     url: /metadata_fr/
   - title: Fonctions Menu
     url: /functions_fr/
-  - title: Mise en forme (CSS)
-    url: /css_fr/
   - title: Partage par l'utilisateur
     url: /sharing_fr/
   - title: Création automatique
     url: /autocreate_fr/
+  - title: Mise en forme (CSS)
+    url: /css_fr/
   - title:
     children:
       - title: "English"
@@ -435,10 +439,12 @@ sharing_en:
     url: /metadata_en/
   - title: Menu Functions 
     url: /functions_en/
-  - title: CSS
-    url: /css_en/
   - title: User Sharing
     url: /sharing_en/
+  - title: Autocreate
+    url: /autocreate_en/
+  - title: CSS
+    url: /css_en/
   - title:
     children:
       - title: "Français"
@@ -497,12 +503,12 @@ resources_fr:
     url: /metadata_fr/
   - title: Fonctions Menu
     url: /functions_fr/
-  - title: Mise en forme (CSS)
-    url: /css_fr/
   - title: Partage par l'utilisateur
     url: /sharing_fr/
   - title: Création automatique
     url: /autocreate_fr/
+  - title: Mise en forme (CSS)
+    url: /css_fr/
   - title:
     children:
       - title: "English"
@@ -561,10 +567,12 @@ resources_en:
     url: /metadata_en/
   - title: Menu Functions 
     url: /functions_en/
-  - title: CSS
-    url: /css_en/
   - title: User Sharing
     url: /sharing_en/
+  - title: Autocreate
+    url: /autocreate_en/
+  - title: CSS
+    url: /css_en/
   - title:
     children:
       - title: "Français"
@@ -647,12 +655,12 @@ metadata_fr:
         url: /metadata_fr/#help
   - title: Fonctions Menu
     url: /functions_fr/
-  - title: Mise en forme (CSS)
-    url: /css_fr/
-  - title: Création automatique
-    url: /autocreate_fr/
   - title: Partage par l'utilisateur
     url: /sharing_fr/
+  - title: Création automatique
+    url: /autocreate_fr/
+  - title: Mise en forme (CSS)
+    url: /css_fr/
   - title:
     children:
       - title: "English"
@@ -735,10 +743,12 @@ metadata_en:
         url: /metadata_en/#help
   - title: Menu Functions 
     url: /functions_en/
-  - title: CSS
-    url: /css_en/
   - title: User Sharing
     url: /sharing_en/
+  - title: Autocreate
+    url: /autocreate_en/
+  - title: CSS
+    url: /css_en/
   - title:
     children:
       - title: "Français"
@@ -771,14 +781,16 @@ functions_fr:
         url: /functions_fr/#moveTO
       - title: "ExecReport_BatchCSV"
         url: /functions_fr/#execReport_BatchCSV
-  - title: Mise en forme (CSS)
-    url: /css_fr/
   - title: Partage par l'utilisateur
     url: /sharing_fr/
-#  - title:
-#    children:
-#      - title: "English"
-#        url: /functions_en/
+  - title: Création automatique
+    url: /autocreate_fr/
+  - title: Mise en forme (CSS)
+    url: /css_fr/
+  - title:
+    children:
+      - title: "English"
+        url: /functions_en/
 
 # ====== FUNCTIONS_FR =============
 functions_fr:
@@ -807,14 +819,16 @@ functions_fr:
         url: /functions_en/#moveTO
       - title: "ExecReport_BatchCSV"
         url: /functions_en/#execReport_BatchCSV
-  - title: CSS
-    url: /css_en/
   - title: User Sharing
     url: /sharing_en/
-#  - title:
-#    children:
-#      - title: "Français"
-#        url: /functions_fr/
+  - title: Autocreate
+    url: /autocreate_en/
+  - title: CSS
+    url: /css_en/
+  - title:
+    children:
+      - title: "Français"
+        url: /functions_fr/
 
 # ====== CSS_FR =============
 css_fr:
@@ -826,12 +840,12 @@ css_fr:
     url: /metadata_fr/
   - title: Fonctions Menu
     url: /functions_fr/
-  - title: Mise en forme (CSS)
-    url: /css_fr/
   - title: Partage par l'utilisateur
     url: /sharing_fr/
   - title: Création automatique
     url: /autocreate_fr/
+  - title: Mise en forme (CSS)
+    url: /css_fr/
   - title:
     children:
       - title: "English"
@@ -847,10 +861,12 @@ css_en:
     url: /metadata_en/
   - title: Menu Functions 
     url: /functions_en/
-  - title: CSS
-    url: /css_en/
   - title: User Sharing
     url: /sharing_en/
+  - title: Autocreate
+    url: /autocreate_en/
+  - title: CSS
+    url: /css_en/
   - title:
     children:
       - title: "Français"
@@ -866,12 +882,12 @@ autocreate_fr:
     url: /metadata_fr/
   - title: Fonctions Menu
     url: /functions_fr/
-  - title: Mise en forme (CSS)
-    url: /css_fr/
   - title: Partage par l'utilisateur
     url: /sharing_fr/
   - title: Création automatique
     url: /autocreate_fr/
+  - title: Mise en forme (CSS)
+    url: /css_fr/
   - title:
     children:
       - title: "English"
@@ -887,10 +903,12 @@ autocreate_en:
     url: /metadata_en/
   - title: Menu Functions 
     url: /functions_en/
-  - title: CSS
-    url: /css_en/
   - title: User Sharing
     url: /sharing_en/
+  - title: Autocreate
+    url: /autocreate_en/
+  - title: CSS
+    url: /css_en/
   - title:
     children:
       - title: "Français"
