@@ -768,7 +768,43 @@ functions_fr:
 #  - title:
 #    children:
 #      - title: "English"
-#        url: /metadata_en/
+#        url: /functions_en/
+
+# ====== FUNCTIONS_FR =============
+functions_fr:
+  - title: Structures
+    url: /structures_en/
+  - title: Resources
+    url: /resources_en/
+  - title: Metadata
+    url: /metadata_en/
+  - title: Menu Functions 
+    url: /functions_en/
+    children:
+      - title: "Get_Multiple"
+        url: /functions_en/#get_multiple
+      - title: "Get_Get_Multiple"
+        url: /functions_en/#get_get_multiple
+      - title: "Import_Multiple"
+        url: /functions_en/#import_multiple
+      - title: "Import_GGMultiple"
+        url: /functions_en/#import_ggmultiple
+      - title: "Proxy_Multiple"
+        url: /functions_en/#proxy_multiple
+      - title: "ImportAndSetDateToday"
+        url: /functions_en/#importAndSetDateToday
+      - title: "MoveTO"
+        url: /functions_en/#moveTO
+      - title: "ExecReport_BatchCSV"
+        url: /functions_en/#execReport_BatchCSV
+  - title: CSS
+    url: /css_en/
+  - title: User Sharing
+    url: /sharing_en/
+#  - title:
+#    children:
+#      - title: "Français"
+#        url: /functions_fr/
 
 # ====== CSS_FR =============
 css_fr:
