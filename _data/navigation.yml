@@ -793,7 +793,7 @@ functions_fr:
         url: /functions_en/
 
 # ====== FUNCTIONS_FR =============
-functions_fr:
+functions_en:
   - title: Structures
     url: /structures_en/
   - title: Resources
