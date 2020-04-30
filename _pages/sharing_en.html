@@ -44,159 +44,68 @@ sidebar:
 </p>
 
 <h4>
-	Use case 1 - The student can show his portfolio to anyone (Karuta user or not) in read only mode 
+	Use case 1 &mdash; The student can show his or her portfolio to anyone (Karuta user or not) in read-only mode 
 	(no edit rights).
 </h4>
 <p class='champ'>student,all,?,4,unlimited,Share@en</p>
-
-<div class='note'>
-	<b>Note 1:</b> The "?" symbol replacing the role or email of the person to share with means that when the student 
-	clicks on Share, a window will open to allow him to specify the recipient's email.
-</div>
-
-<img src='../assets/img/image009.png' width='80%'/>
-
-<div class='note'>
-	<b>Note 2:</b> For this to work, when instantiating the portfolio the role "all" must be shared with the user "public".
-</div>
-
-<!-- =================================== -->
+<p>
+	<b>Note 1:</b> Using the <code>?</code> symbol, the recipient is not predetermined by the designer; 
+	when the student clicks on <i>Share</i>, a pop-up window will allow him or her to specify the recipient's 
+	email.
+</p>
+<p>
+	<b>Note 2:</b> The portfolio instance must be shared with the user <i>public</i> in the role <i>all</i>.
+</p>
 
 <h4>
-	Use case 2 - The student can show his portfolio to anyone (Karuta user or not) in read-only mode (no editing rights) 
-	but the sharing has a limited duration of 24 hours.
+	Use case 2 &mdash; The student can show his portfolio to anyone (Karuta user or not) in read-only mode <
+	(no edit rights), but the sharing has a limited duration of 24 hours.
 </h4>
-<p>
-	<code>
-			Share<br>
-			role who shares,recipient role,roles and/or emails,level (0-4),link validity (in hours),button label@en
-			[,condition][;other sharing]
-	</code>
-</p>
 <p class='champ'>student,all,?,4,24,Share@en</p>
-
-<div class='note'>
-	<b>Note 1:</b> The "?" symbol replacing the role or email of the person to share with means that when the student 
-	clicks on Share, a window will open to allow him to specify the recipient's email.
-</div>
-
-<div class='note'>
-	<b>Note 2:</b> For this to work, when instantiating the portfolio the role "all" must be shared with the user "public".
-</div>
-
+<p>
+	<b>Note 1:</b> Using the <code>?</code> symbol, the recipient is not predetermined by the designer; 
+	when the student clicks on <i>Share</i>, a pop-up window will allow him or her to specify the recipient's 
+	email.
+</p>
+<p>
+	<b>Note 2:</b> The portfolio instance must be shared with the user <i>public</i> in the role <i>all</i>.
+</p>
 
 <h4>
-	Use-case 3 &mdash; The student requests for his teacher to proceed with his Request an evaluation; the teacher has a Karuta account 
-	and the student's portfolio was linked with his account in the "teacher" role at the time of instantiation.
+	Use case 3 &mdash; The student requests for his or her teacher to proceed with their evaluation; the teacher 
+	has a Karuta account and the student's portfolio is shared with said teacher in the <i>teacher</i>
+	role.
 </h4>
-<p>
-	<code>
-			Share<br>
-			role who shares,recipient role,roles and/or emails,level (0-4),link validity (in hours),button label@en
-			[,condition][;other sharing]
-	</code>
-</p>
-<p class='champ'>student,teacher,teacher,1,12,Request an Assessment@en</p>
-
-<p>The teacher receives an email and simply clicks on the hyperlink to proceed with the evaluation.</p>
-
-<!-- =================================== -->
+<p class='champ'>student,teacher,teacher,1,12,Request an evaluation@en</p>
+<p>The teacher receives an email and clicks on the hyperlink it contains to proceed with the evaluation.</p>
 
 <h4>
-	Use-case 4 &mdash; The student requests for his internship supervisor to proceed with his assessment; the internship 
-	supervisor does not have a Karuta account.
+	Use case 4 &mdash; The student requests for his or her internship supervisor to proceed with their 
+	evaluation; the internship supervisor does not have a Karuta account.
 </h4>
+<p class='champ'>student,supervisor,yves.lacoste@airfrance.com,3,12,Request an evaluation@en</p>
 <p>
-	<code>
-			Share<br>
-			role who shares,recipient role,roles and/or emails,level (0-4),link validity (in hours),button label@en
-			[,condition][;other sharing]
-	</code>
+	The supervisor receives an email and clicks on the hyperlink it contains to proceed with the evaluation;
+	the supervisor does not have to identify him or herself in Karuta. The hyperlink is valid for 12 hours.
 </p>
-<p class='champ'>student,supervisor,yves.lacoste@airfrance.com,3,12,Request an Assessment@en</p>
-
-<p>
-	The supervisor receives an email and simply clicks on the hyperlink to proceed with the evaluation; he does 
-	not have to identify himself in the Karuta system. The hyperlink is valid for 12 hours.
-</p>
-
-<!-- =================================== -->
 
 <h4>
-	Use-case 5 &mdash; The student asks one of his colleagues to add a comment in his portfolio (peer evaluation);
-	the colleague has a Karuta account.
+	Use case 5 &mdash; The student asks a peer to add a review in his or her portfolio; the colleague has a 
+	Karuta account.
 </h4>
 <p>
-	<code>
-			Share<br>
-			role who shares,recipient role,roles and/or emails,level (0-4),link validity (in hours),button label@en
-			[,condition][;other sharing]
-	</code>
+<p class='champ'>student,peer,?,1,12,Request peer review@en</p>
+<p>The peer receives an email and clicks on the hyperlink it contains to add his comment.</p>
+<p>
+	<b>Note:</b> Using the <code>?</code> symbol, the recipient is not predetermined by the designer; 
+	when the student clicks on <i>Request peer review</i>, a pop-up window will allow him or her to specify 
+	the recipient's email. It is assumed here that the student has a great number of peers and that the 
+	designer did not specify which one will be mobilized, so as to give the student more latitude.
 </p>
-<p class='champ'>student,peer,?,1,12,Request a Peer Comment@en</p>
-
-<p>The colleague receives an email and just has to click on the hyperlink to add his comment.</p>
-
-<div class='note'>
-	<b>Note:</b> The "?" symbol replacing the role or email of the person to share with means that when the student 
-	clicks on "Request a Peer Comment", a window will open to allow him to specify the peer's email. It is assumed here 
-	that the student has a great number of colleagues and that the designer did not specify which colleague will be 
-	mobilized, so as to give the student more latitude.
-</div>
  
 
 <h4>General cases: the two tables below explain the possible values of the parameters in the sharing box.</h4>
 
-<table>
-	<tr>
-		<td width='25%'>Role who shares</td>
-		<td>Usually the student, but all users that have been linked to the portfolio in a specific role can also share.</td>
-	</tr>
-	<tr>
-		<td>Recipient Role</td>
-		<td>
-			Role the recipient will have in the portfolio (for example, if "supervisor" then the recipient can do what a
-			supervisor can do in the portfolio).
-		</td>
-	</tr>
-	<tr>
-		<td>Roles and/or Emails</td>
-		<td>
-			The recipient's role in the portfolio or his email:
-			<ul>
-				<li>
-					For example, if "supervisor" then the sharing email will be sent to the account that has supervisor role 
-					on this portfolio. The user does not manually specify whom to share with, this is determined by Karuta.
-				 </li>
-				<li>An email address may be specified if the recipient is known in advance.</li>
-				<li>
-					If "?" a dialog box will ask the user to enter the email address of the person with whom to share the 
-					portfolio.
-				</li>
-			</ul>
-		</td>
-	</tr>
-	<tr>
-		<td>Level (0,4)</td>
-		<td>
-			The security level determines whether to ask the recipient to log into their Karuta account before accessing 
-			the shared content. It also allows a person who doesn't have a Karuta account to edit portfolio content (level 3).
-		 </td>
-	</tr>
-	<tr>
-		<td>Link Validity (in hours)</td>
-		<td>For security reasons, the designer may specify the life span of the link that will be sent.</td>
-	</tr>
-	<tr>
-		<td>Button Label@en</td>
-		<td>Label of the sharing button / menu option.</td>
-	</tr>
-	<tr>
-		<td>Condition</td>
-		<td>For example: submitted=='Y' (optional).</td>
-	</tr>
-</table>
-<p></p>
 <table>
 	<tr>
 		<td width='25%'>Level</td>

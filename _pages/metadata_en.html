@@ -504,7 +504,7 @@ sidebar:
 	</p>
 	<h4>Share Format</h4>
 	<p>
-		<code>role that shares</code>,<code>role of visitor</code>,<code>role(s) and/or email(s) of 
+		<code>role that shares</code>,<code>visitor role</code>,<code>role(s) and/or email(s) of 
 		recipient(s)</code>,<code>security level</code>,<code>link lifespan</code>,<code>button 
 		label</code>@en[,<code>condition</code>]
 	</p>
@@ -512,7 +512,7 @@ sidebar:
 		<li>
 			<code>role that shares</code> Role of user that can share (will have the sharing button).
 		</li>
-		<li><code>role of visitor</code> Role the recipient will have in the portfolio.</li>
+		<li><code>visitor role</code> Role the recipient will have in the portfolio.</li>
 		<li>
 			<code>role(s) and/or email(s) of recipient(s)</code> Role(s) and/or email(s) of recipient(s). 
 			If it is a role, all users who have been shared with the portfolio in this role will receive 
@@ -534,6 +534,12 @@ sidebar:
 			the user. Example: <i>submitted=='Y'</i>.
 		</li>
 	</ul>
+	<p> 
+		Option <code>?</code><br>
+		Can replace <code>role(s) and/or email(s) of recipient(s)</code>. In this case the email's 
+		recipient is not predetermined by the designer; the user will specify an email address in a
+		pop-up window. 
+	</p>
 	
 	<h4>Security Levels</h4>
 	<p>
@@ -566,8 +572,8 @@ sidebar:
 	<p>
 		Level 4 &ndash; Public link<br>
 		If the email's recipient doesn't have a Karuta account, a temporary user ID will be created.
-		The user's role is <i>all</i>: can see but cannot edit. The portfolio must be shared with the 
-		user <i>public</i> in the role <i>all</i>.
+		The user's role is <i>all</i>: can see but cannot edit. The portfolio instance must be shared 
+		with the user <i>public</i> in the role <i>all</i>.
 	</p>
 	<p>See the <a href='../sharing_en/'>USER SHARING</a> page for use case examples.</p>
 </article>

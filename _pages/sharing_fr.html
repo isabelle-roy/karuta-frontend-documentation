@@ -46,7 +46,7 @@ sidebar:
 </p>
 
 <h4>
-	Cas 1&nbsp;– L’étudiant peut montrer son portfolio à n’importe qui (utilisateur Karuta ou non) en mode 
+	Cas 1&nbsp;&mdash; L’étudiant peut montrer son portfolio à n’importe qui (utilisateur Karuta ou non) en mode 
 	lecture seulement (aucun droit d’édition).
 </h4>
 <p class='champ'>etudiant,all,?,4,unlimited,Partager@fr</p>
@@ -56,12 +56,12 @@ sidebar:
 	destinataire.
 </p>
 <p>
-	Note 2&nbsp;: Lors de l’instanciation du portfolio, le rôle <i>all</i> doit être partagé avec 
-	l’utilisateur <i>public</i>.
+	Note 2&nbsp;: L'instance de portfolio doit être partagée avec l'utilisateur <i>public</i> dans le rôle 
+	<i>all</i>.
 </p>
 
 <h4>
-	Cas 2&nbsp;– L’étudiant peut montrer son portfolio à n’importe qui (utilisateur Karuta ou non) en mode 
+	Cas 2&nbsp;&mdash; L’étudiant peut montrer son portfolio à n’importe qui (utilisateur Karuta ou non) en mode 
 	lecture seulement (aucun droit d’édition) mais le partage a une durée limitée de 24 heures.
 </h4>
 <p class='champ'>etudiant,all,?,4,24,Partager@fr</p>
@@ -76,7 +76,7 @@ sidebar:
 </p>
 
 <h4>
-	Cas 3&nbsp;– L’étudiant demande à son professeur de procéder à son évaluation&nbsp;; le professeur 
+	Cas 3&nbsp;&mdash; L’étudiant demande à son professeur de procéder à son évaluation&nbsp;; le professeur 
 	possède un compte Karuta et le portfolio lui est partagé dans le rôle <i>professeur</i>.
 </h4>
 <p class='champ'>etudiant,professeur,professeur,1,12,Demander une évaluation@fr</p>
@@ -86,7 +86,7 @@ sidebar:
 </p>
 
 <h4>
-	Cas 4&nbsp;– L’étudiant demande à son responsable de stage de compléter son évaluation&nbsp;; le 
+	Cas 4&nbsp;&mdash; L’étudiant demande à son responsable de stage de compléter son évaluation&nbsp;; le 
 	responsable de stage n’a pas de compte Karuta.
 </h4>
 <p class='champ'>etudiant,evaluateur,yves.lacoste@airfrance.com,3,12,Demander une évaluation@fr</p>
@@ -96,7 +96,7 @@ sidebar:
 </p>
 
 <h4>
-	Cas&nbsp;5 – L’étudiant demande à un de ses collègues d’inscrire un commentaire dans son portfolio 
+	Cas 5&nbsp;&mdash; L’étudiant demande à un de ses collègues d’inscrire un commentaire dans son portfolio 
 	(évaluation par les pairs)&nbsp;; le collègue possède un compte Karuta.
 </h4>
 <p class='champ'>etudiant,pair,?,2,12,Demander un commentaire@fr</p>
@@ -113,63 +113,6 @@ sidebar:
 	Cas généraux&nbsp;: les deux tableaux ci-dessous expliquent les valeurs des paramètres de 
 	la métadonnée Partager.
 </h4>
-<p></p>
-<table>
-	<tr>
-		<td width='25%'>Rôle qui partage</td>
-		<td>Rôle qui aura le bouton pour partager.</td>
-	</tr>
-	<tr>
-		<td>Rôle visiteur</td>
-		<td>
-			Rôle qu’aura le destinataire lorsqu'il visitera le portfolio (par exemple 
-			<i>superviseur</i>&nbsp;– le destinataire pourra faire ce que peut faire un superviseur).
-		</td>
-	</tr>
-	<tr>
-		<td>Rôles et/ou courriels destinataires</td>
-		<td>
-			À qui le courriel avec l'hyperlien sera envoyé&nbsp;:
-			<ul>
-				<li>
-					Rôles&nbsp;: Le courriel sera envoyé à tous les comptes qui sont partagés au portfolio 
-					dans ce rôle.
-				 </li>
-				<li>Courriels&nbsp;: Le courriel sera envoyé aux adresses spécifiées.</li>
-				<li>
-					?&nbsp;: C'est l'utilisateur qui spécifie l'adresse de courriel au moment du partage.
-				</li>
-			</ul>
-		</td>
-	</tr>
-	<tr>
-		<td>Niveau (0,4)</td>
-		<td>
-			Le niveau de sécurité détermine si on oblige le destinataire à se connecter à Karuta avec son 
-			identifiant et mot de passe avant de voir ce qui lui est partagé. Il permet aussi à des 
-			destinataires qui n’ont pas de compte dans Karuta d’éditer des ressources sans se connecter 
-			(niveau 3).
-		 </td>
-	</tr>
-	<tr>
-		<td>Durée de vie du lien</td>
-		<td>
-			En heures. Pour des raisons de sécurité, le designer peut spécifier la durée de vie du lien 
-			qui sera envoyé.
-		</td>
-	</tr>
-	<tr>
-		<td>Libellé du bouton</td>
-		<td>
-			Le libellé du bouton pour partager. Suffixer de @fr pour français et/ou @en pour anglais. 
-			Si bilingue, séparer par une barre oblique (/).
-		</td>
-	</tr>
-	<tr>
-		<td>Condition</td>
-		<td>Optionnel. Par exemple&nbsp;: <i>submitted=='Y'</i>.</td>
-	</tr>
-</table>
 <p></p>
 <table>
 	<tr>
