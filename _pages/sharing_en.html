@@ -1,7 +1,7 @@
 ---
 layout: archive_en
 permalink: /sharing_en/
-title: "Sharing"
+title: "User Sharing"
 sidebar:
  nav: "sharing_en"
 ---
@@ -10,46 +10,47 @@ sidebar:
 		border: 1px solid gray;
 		padding: 5px;
 	}
-	.note {
-		font-size:70%;
-	}
 </style>
 <p>
-	Complete portfolios, parts of portfolios or even specific resources can be shared by a given user through a custom button. 
-	Users who receive the sharing will be notified by email (the email contains a hyperlink to the shared portfolio).
+	The Share metadata is used to allow the user to share part or all of their portfolio with a third 
+	party. It is also possible to give this third party the right to edit shared elements. The user 
+	shares his or her portfolio by clicking on a button, which triggers an email containing a hyperlink 
+	to the shared elements to be sent to the third party.
 </p>
 <p>
-	 They will then be able to intervene in the portfolio according to the role that has be assigned to them. The sharing function
-	 enables two scenarios: 
+	 User sharing enables two scenarios: 
 	 
 </p>
-	<ol>
+	<ul>
 		<li>notify one of the portfolio users that they need to intervene;</li>
 		<li>allow a user who does not currently have the rights to intervene in a portfolio to do so.</li>
-	</ol>
+	</ul>
 	
-<h4>In a Portfolio</h4>
-
-<img src='../assets/img/image003.png' width='80%'/>
-
+<h4>In the Portfolio</h4>
+<img src='../assets/img/image003_en.png' width='80%'/>
 <p>
-	In this example, if in his or her portfolio the student clicks on "Share With a Peer", the system sends an email to the peer 
-	with a hyperlink to a section of the portfolio in which they can enter their comment.
+	In this example, when the student clicks on "Request peer review", the system sends an email to the 
+	peer with a hyperlink to a section of the portfolio in which they can enter their comment.
 </p>
 
-<img src='../assets/img/image006.png' width='50%'/>
-<p>The sharing specification is done in the metadata tab of a section, page, sub-section or even a resource.</p>
+<h4>In the Email</h4>
+<img src='../assets/img/image006_en.png' width='40%'/>
 
 <h4>In the Metadata</h4>
+<img src='../assets/img/image008_en.png' width='80%'/>
+<p>
+	<code>Share</code><br>
+	<code>role that shares</code>,<code>visitor role</code>,<code>role(s) and or email(s) of 
+	recipient(s)</code>,<code>security level</code>,<code>link lifespan</code>,<code>button 
+	label</code>[,<code>condition</code>][;other sharing]
+</p>
 
-<img src='../assets/img/image008.png' width='80%'/>
-
-<p>The conditions of this sharing are very sophisticated; here are some common use-cases:</p>
-
-<!-- =================================== -->
+<p>
+	There are multiple options for the security conditions of user sharing; here are some common use-cases:
+</p>
 
 <h4>
-	Use-case 1 &mdash; The student can show his portfolio to anyone (Karuta user or not) in read only mode (no editing rights).
+	Use case 1 - The student can show his portfolio to anyone (Karuta user or not) in read only mode (no editing rights).
 </h4>
 <p>
 	<code>
@@ -74,7 +75,7 @@ sidebar:
 <!-- =================================== -->
 
 <h4>
-	Use-case 2 &mdash; The student can show his portfolio to anyone (Karuta user or not) in read-only mode (no editing rights) 
+	Use case 2 - The student can show his portfolio to anyone (Karuta user or not) in read-only mode (no editing rights) 
 	but the sharing has a limited duration of 24 hours.
 </h4>
 <p>
@@ -95,7 +96,6 @@ sidebar:
 	<b>Note 2:</b> For this to work, when instantiating the portfolio the role "all" must be shared with the user "public".
 </div>
 
-<!-- =================================== -->
 
 <h4>
 	Use-case 3 &mdash; The student requests for his teacher to proceed with his Request an evaluation; the teacher has a Karuta account 
