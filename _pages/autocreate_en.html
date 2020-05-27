@@ -12,7 +12,7 @@ sidebar:
 </p>
 <article>
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='step1'>Execution Condition</h3>
+	<h3 id='condition'>Execution Condition</h3>
 	<p>
 		For the creation batch to execute upon the user's fist connection, the user account must have the 
 		Creator	right &mdash; which should be removed at the end of the batch execution. The account must
@@ -41,7 +41,7 @@ sidebar:
 
 <article>
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='step1'>Step 2 &mdash; Writing the Creation Batch</h3>
+	<h3 id='step2'>Step 2 &mdash; Writing the Creation Batch</h3>
 	<p>
 		The batch must include the instructions to create one or more portfolios for the user and then
 		share these portfolios with said user in the desired role. In the end it must also:
@@ -53,14 +53,17 @@ sidebar:
 		</ol>
 	<p>Automatic creation batch example:</p>
 	<img src='../assets/img/autocreate/batch_en.jpg' width='75%'/>
-	<p>	Download this batch model <b><a href='../assets/img/autocreate/batch-creation.xml'>here</a></b>.</p>
+	<p>
+		Download this batch model <b><a href='../assets/img/autocreate/batch-creation.xml'>here</a></b>
+		or see the detailed explanation of the model at the bottom of the page.
+	</p>
 </article>
 
 <article>
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='step2'>Étape 3 &mdash; Application (Frontend) Configuration</h3>
+	<h3 id='step3'>Étape 3 &mdash; Application (Frontend) Configuration</h3>
 	<p>
-		The creation batch and the global variables it refers to must be specified in the frontend's 
+		The creation batch and the variables it refers to must be specified in the frontend's 
 		<code>application/js/specific.js</code> file. Also, the g_execbatch variable on line 3 must be
 		set to <i>true</i>.
 	</p>
@@ -69,34 +72,41 @@ sidebar:
 
 <article>
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='step3'>Détails du batch de création</h3>
-	<!-- --------------------------------------- -->
-	<h4>Création du projet Cohorte</h4>
-	<p> Dans notre exemple un projet Cohorte sera créé si il n'existe pas déjà.
-	Son code et libellé sera la valeur de la vaiable globale défini dans le fichier specific.js (année-mois)
+	<h3 id='batchDetails'>Creation Batch Details (from Step 2)</h3>
+	<h4>Creation of a project for the cohort</h4>
+	<p>
+		
+		
+		Dans notre exemple un projet pour la cohorte sera créé si il n'existe pas déjà. Son code et 
+		son libellé seront la valeur de la variable globale définie dans le fichier <i>specific.js</i>
+		(année-mois du système).
 	</p>
 	<img src='../assets/img/autocreate/create-project.jpg'/>
-	<!-- --------------------------------------- -->
-	<h4>Création du portfolio</h4>
+
+	<h4>Création du portfolio de l'utilisateur</h4>
 	<img src='../assets/img/autocreate/create-tree.jpg'/>
-	<!-- --------------------------------------- -->
-	<h4>Partage du portfolio</h4>
+
+	<h4>Partage du portfolio avec l'utilisateur dans le bon rôle</h4>
 	<img src='../assets/img/autocreate/share-tree.jpg'/>
-	<!-- --------------------------------------- -->
-	<h4>Mise à jour des ressources</h4>
+
+	<h4>Mise à jour des ressources profil dans le portfolio</h4>
 	<p>Dans notre modèle de portfolio, il y a le nom, prénom et couriel de l'étudiant.</p>
 	<img src='../assets/img/autocreate/update-resources.jpg'/>
-	<!-- --------------------------------------- -->
-	<h4>Départage du portfolio</h4>
+
+	<h4>Départage du portfolio d'avec l'étudiant dans le rôle <i>designer</i></h4>
+	<p>
+		Le création du portfolio par l'étudiant en avait fait le designer. Or l'étudiant ne doit pas
+		avoir plus d'un rôle dans son portfolio.
+	</p>
 	<img src='../assets/img/autocreate/unshare-portfolio.jpg'/>
-	<!-- --------------------------------------- -->
-	<h4>Départage du projet</h4>
+
+	<h4>Départage du projet cohorte d'avec l'étudiant dans le rôle <i>designer</i></h4>
 	<img src='../assets/img/autocreate/unshare-project.jpg'/>
-	<!-- --------------------------------------- -->
-	<h4>Changement de propiétaire du portfolio</h4>
+
+	<h4>Changement de propiétaire du portfolio pour root</h4>
+	<p>Idem point précédent&nbsp;: la création du portfolio par l'étudiant en avait fait le propriétaire.</p>
 	<img src='../assets/img/autocreate/setowner-portfolio.jpg'/>
-	<!-- --------------------------------------- -->
-	<h4>Changement de propiétaire du portfolio</h4>
+
+	<h4>Changement de propiétaire du projet cohorte pour root</h4>
 	<img src='../assets/img/autocreate/setowner-project.jpg'/>
-	<!-- --------------------------------------- -->
 </article>

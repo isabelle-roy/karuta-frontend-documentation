@@ -335,7 +335,7 @@ portfolio_en:
     url: /metadata_en/
   - title: Menu Functions 
     url: /functions_en/
-  - title: Autocreate
+  - title: Automatic Creation
     url: /autocreate_en/
   - title: CSS
     url: /css_en/
@@ -391,7 +391,7 @@ structures_en:
     url: /metadata_en/
   - title: Menu Functions 
     url: /functions_en/
-  - title: Autocreate
+  - title: Automatic Creation
     url: /autocreate_en/
   - title: CSS
     url: /css_en/
@@ -429,7 +429,7 @@ sharing_en:
     url: /metadata_en/
   - title: Menu Functions 
     url: /functions_en/
-  - title: Autocreate
+  - title: Automatic Creation
     url: /autocreate_en/
   - title: CSS
     url: /css_en/
@@ -553,7 +553,7 @@ resources_en:
     url: /metadata_en/
   - title: Menu Functions 
     url: /functions_en/
-  - title: Autocreate
+  - title: Automatic Creation
     url: /autocreate_en/
   - title: CSS
     url: /css_en/
@@ -725,7 +725,7 @@ metadata_en:
         url: /metadata_en/#help
   - title: Menu Functions 
     url: /functions_en/
-  - title: Autocreate
+  - title: Automatic Creation
     url: /autocreate_en/
   - title: CSS
     url: /css_en/
@@ -797,7 +797,7 @@ functions_en:
         url: /functions_en/#moveTO
       - title: "ExecReport_BatchCSV"
         url: /functions_en/#execReport_BatchCSV
-  - title: Autocreate
+  - title: Automatic Creation
     url: /autocreate_en/
   - title: CSS
     url: /css_en/
@@ -835,7 +835,7 @@ css_en:
     url: /metadata_en/
   - title: Menu Functions 
     url: /functions_en/
-  - title: Autocreate
+  - title: Automatic Creation
     url: /autocreate_en/
   - title: CSS
     url: /css_en/
@@ -873,7 +873,7 @@ autocreate_en:
     url: /metadata_en/
   - title: Menu Functions 
     url: /functions_en/
-  - title: Autocreate
+  - title: Automatic Creation
     url: /autocreate_en/
   - title: CSS
     url: /css_en/
