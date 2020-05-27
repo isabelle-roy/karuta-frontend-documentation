@@ -15,13 +15,14 @@ sidebar:
 	<h3 id='step1'>Condition d'exécution</h3>
 	<p>
 		Pour que le batch de création s'exécute lors de la première connexion de l'utilisateur, ce 
-		dernier doit avoir le droit de création qui lui sera retiré à la fin de l'exécution du batch.
-		Il doit également avoir <code>xlimited</code> dans le champ Autre.
+		dernier doit avoir le droit Créateur qui lui sera retiré à la fin de l'exécution du batch.
+		Il doit également avoir l'instruction <code>xlimited</code> dans le champ Autre.
 	</p>
 		<img src='../assets/img/autocreate/compte_utilisateur.png' width='50%'/>
 	<p>
-		REMARQUE : si CAS est utilisé, Karuta créera automatiquement l'utilisateur avec comme username 
-		l'identifiant CAS avec le droit de création et <code>xlimited</code> dans le champ Autre.
+		REMARQUE : si CAS est utilisé, Karuta créera automatiquement l'utilisateur avec l'identifiant CAS 
+		comme identifiant Karuta ainsi qu'avec le droit Créateur et l'instruction <code>xlimited</code>
+		dans le champ Autre.
 	</p>
 </article>
 
@@ -43,13 +44,13 @@ sidebar:
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
 	<h3 id='step1'>Étape 1 - Écriture du batch de création</h3>
 	<p>
-		Le batch doit inclure la création du ou des portfolios de l'utilisateur, le partage avec cet utilisateur dans le rôle désiré.
-		Il doit se terminer par :
+		Le batch doit inclure pour créer le ou les portfolios de l'utilisateur puis partager ces portfolios
+		avec l'utilisateur dans le rôle désiré. À la fin il doit :
 	<p>
 	<ol>
-		<li> Retirer le droit de Créateur de l'utilisateur&nbsp;;</li>
-		<li> Départager les portfolios créés du l'utilisateur dans le rôle <i>designer</i>&nbsp;;</li>
-		<li> Changer le propriétaire des portfolios créés pour root.</li>
+		<li> retirer le droit Créateur de l'utilisateur&nbsp;;</li>
+		<li> départager les portfolios créés du l'utilisateur dans le rôle <i>designer</i>&nbsp;;</li>
+		<li> changer le propriétaire des portfolios créés pour root.</li>
 	</ol>
 	<p>Exemple de batch de création automatique&nbsp;:</p>
 	<img src='../assets/img/autocreate/batch.jpg'/>
