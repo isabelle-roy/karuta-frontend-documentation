@@ -575,7 +575,34 @@ sidebar:
 		The user's role is <i>all</i>: can see but cannot edit. The portfolio instance must be shared 
 		with the user <i>public</i> in the role <i>all</i>.
 	</p>
-	<p>See the <a href='../sharing_en/'>USER SHARING</a> page for use case examples.</p>
+	
+	<h4>Use Case Examples</h4>
+	<p>
+		The student can show his or her portfolio to anyone (Karuta user or not) in read-only mode 
+		(no edit rights):<br>
+		<code>student,all,?,4,unlimited,Share@en</code>
+	</p>
+	<p>
+		The student can show his portfolio to anyone (Karuta user or not) in read-only mode (no edit 
+		rights), but the sharing has a limited duration of 24 hours:<br>
+		<code>student,all,?,4,24,Share@en</code>
+	</p>
+	<p>
+		The student requests for his or her teacher to proceed with their evaluation; the teacher has 
+		a Karuta account and the student's portfolio is shared with said teacher in the <i>teacher</i> 
+		role:<br>
+		<code>student,teacher,teacher,1,12,Request an evaluation@en</code>
+	</p>
+	<p>
+		The student requests for his or her internship supervisor to proceed with their evaluation; 
+		the internship supervisor does not have a Karuta account:<br>
+		<code>student,all,?,4,unlimited,Share@en</code>
+	</p>
+	<p>
+		The student asks a peer to add a review in his or her portfolio; the colleague has a Karuta 
+		account:<br>
+		<code>student,peer,?,2,12,Request a comment@en</code>
+	</p>
 </article>
 
 <article>

@@ -316,8 +316,6 @@ portfolio_fr:
     url: /metadata_fr/
   - title: Fonctions Menu
     url: /functions_fr/
-  - title: Partage par l'utilisateur
-    url: /sharing_fr/
   - title: Création automatique
     url: /autocreate_fr/
   - title: Mise en forme (CSS)
@@ -337,8 +335,6 @@ portfolio_en:
     url: /metadata_en/
   - title: Menu Functions 
     url: /functions_en/
-  - title: User Sharing
-    url: /sharing_en/
   - title: Autocreate
     url: /autocreate_en/
   - title: CSS
@@ -367,8 +363,6 @@ structures_fr:
     url: /metadata_fr/
   - title: Fonctions Menu
     url: /functions_fr/
-  - title: Partage par l'utilisateur
-    url: /sharing_fr/
   - title: Création automatique
     url: /autocreate_fr/
   - title: Mise en forme (CSS)
@@ -397,8 +391,6 @@ structures_en:
     url: /metadata_en/
   - title: Menu Functions 
     url: /functions_en/
-  - title: User Sharing
-    url: /sharing_en/
   - title: Autocreate
     url: /autocreate_en/
   - title: CSS
@@ -418,8 +410,6 @@ sharing_fr:
     url: /metadata_fr/
   - title: Fonctions Menu
     url: /functions_fr/
-  - title: Partage par l'utilisateur
-    url: /sharing_fr/
   - title: Création automatique
     url: /autocreate_fr/
   - title: Mise en forme (CSS)
@@ -439,8 +429,6 @@ sharing_en:
     url: /metadata_en/
   - title: Menu Functions 
     url: /functions_en/
-  - title: User Sharing
-    url: /sharing_en/
   - title: Autocreate
     url: /autocreate_en/
   - title: CSS
@@ -503,8 +491,6 @@ resources_fr:
     url: /metadata_fr/
   - title: Fonctions Menu
     url: /functions_fr/
-  - title: Partage par l'utilisateur
-    url: /sharing_fr/
   - title: Création automatique
     url: /autocreate_fr/
   - title: Mise en forme (CSS)
@@ -567,8 +553,6 @@ resources_en:
     url: /metadata_en/
   - title: Menu Functions 
     url: /functions_en/
-  - title: User Sharing
-    url: /sharing_en/
   - title: Autocreate
     url: /autocreate_en/
   - title: CSS
@@ -655,8 +639,6 @@ metadata_fr:
         url: /metadata_fr/#help
   - title: Fonctions Menu
     url: /functions_fr/
-  - title: Partage par l'utilisateur
-    url: /sharing_fr/
   - title: Création automatique
     url: /autocreate_fr/
   - title: Mise en forme (CSS)
@@ -743,8 +725,6 @@ metadata_en:
         url: /metadata_en/#help
   - title: Menu Functions 
     url: /functions_en/
-  - title: User Sharing
-    url: /sharing_en/
   - title: Autocreate
     url: /autocreate_en/
   - title: CSS
@@ -781,8 +761,6 @@ functions_fr:
         url: /functions_fr/#moveTO
       - title: "ExecReport_BatchCSV"
         url: /functions_fr/#execReport_BatchCSV
-  - title: Partage par l'utilisateur
-    url: /sharing_fr/
   - title: Création automatique
     url: /autocreate_fr/
   - title: Mise en forme (CSS)
@@ -819,8 +797,6 @@ functions_en:
         url: /functions_en/#moveTO
       - title: "ExecReport_BatchCSV"
         url: /functions_en/#execReport_BatchCSV
-  - title: User Sharing
-    url: /sharing_en/
   - title: Autocreate
     url: /autocreate_en/
   - title: CSS
@@ -840,8 +816,6 @@ css_fr:
     url: /metadata_fr/
   - title: Fonctions Menu
     url: /functions_fr/
-  - title: Partage par l'utilisateur
-    url: /sharing_fr/
   - title: Création automatique
     url: /autocreate_fr/
   - title: Mise en forme (CSS)
@@ -861,8 +835,6 @@ css_en:
     url: /metadata_en/
   - title: Menu Functions 
     url: /functions_en/
-  - title: User Sharing
-    url: /sharing_en/
   - title: Autocreate
     url: /autocreate_en/
   - title: CSS
@@ -882,8 +854,6 @@ autocreate_fr:
     url: /metadata_fr/
   - title: Fonctions Menu
     url: /functions_fr/
-  - title: Partage par l'utilisateur
-    url: /sharing_fr/
   - title: Création automatique
     url: /autocreate_fr/
   - title: Mise en forme (CSS)
@@ -903,8 +873,6 @@ autocreate_en:
     url: /metadata_en/
   - title: Menu Functions 
     url: /functions_en/
-  - title: User Sharing
-    url: /sharing_en/
   - title: Autocreate
     url: /autocreate_en/
   - title: CSS

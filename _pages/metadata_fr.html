@@ -575,9 +575,32 @@ sidebar:
 		le rôle <i>all</i>&nbsp;: donc il peut voir mais ne peut rien modifier. L'instance 
 		de portfolio doit être partagée avec l'utilisateur <i>public</i> dans le rôle <i>all</i>.
 	</p>
-	<p>	
-		Voir la page <a href='../sharing_fr/'>PARTAGE PAR L'UTILISATEUR</a> pour des exemples 
-		d'utilisation.
+	
+	<h4>Exemples de cas d'utilisation</h4>
+	<p>
+		L'étudiant peut montrer son portfolio à n'importe qui (utilisateur Karuta ou non) en mode 
+		lecture seulement (aucun droit d'édition)&nbsp;:<br>
+		<code>etudiant,all,?,4,unlimited,Partager@fr</code>
+	</p>
+	<p>
+		L'étudiant peut montrer son portfolio à n'importe qui (utilisateur Karuta ou non) en mode 
+		lecture seulement (aucun droit d'édition) mais le partage a une durée limitée de 24 heures&nbsp;:<br>
+		<code>etudiant,all,?,4,24,Partager@fr</code>
+	</p>
+	<p>
+		L'étudiant demande à son professeur de procéder à son évaluation ; le professeur possède un compte 
+		Karuta et le portfolio lui est partagé dans le rôle <i>professeur</i>&nbsp;:<br>
+		<code>etudiant,professeur,professeur,1,12,Demander une évaluation@fr</code>
+	</p>
+	<p>
+		L'étudiant demande à son responsable de stage de compléter son évaluation&nbsp;; le responsable 
+		de stage n'a pas de compte Karuta&nbsp;:<br>
+		<code>etudiant,all,?,4,unlimited,Partager@fr</code>
+	</p>
+	<p>
+		L'étudiant demande à un de ses collègues d'inscrire un commentaire dans son portfolio (évaluation 
+		par les pairs)&nbsp; le collègue possède un compte Karuta&nbsp;:<br>
+		<code>etudiant,pair,?,2,12,Demander un commentaire@fr</code>
 	</p>
 </article>
 
