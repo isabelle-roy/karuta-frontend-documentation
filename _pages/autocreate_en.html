@@ -28,7 +28,7 @@ sidebar:
 <article>
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
 
-	<h3 id='step1'>Step 0 &mdash; Backend Configuration</h3>
+	<h3 id='step1'>Step 1 &mdash; Backend Configuration</h3>
 	<p>
 		In the backend's <code>configKaruta.properties</code> configuration file, the following values must
 		be set:
@@ -41,7 +41,7 @@ sidebar:
 
 <article>
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='step1'>Step 1 &mdash; Writing the Creation Batch</h3>
+	<h3 id='step1'>Step 2 &mdash; Writing the Creation Batch</h3>
 	<p>
 		The batch must include the instructions to create one or more portfolios for the user and then
 		share these portfolios with said user in the desired role. In the end it must also:
@@ -51,19 +51,20 @@ sidebar:
 			<li> unshare the new portfolios from the user in the <i>designer</i> role;</li>
 			<li> Change the ownership of the new portfolios to root.</li>
 		</ol>
-	<p>Automatic creation bacth example:</p>
+	<p>Automatic creation batch example:</p>
 	<img src='../assets/img/autocreate/batch_en.jpg'/>
 	<p>	Download this batch model <b><a href='../assets/img/autocreate/batch-creation.xml'>here</a></b>.</p>
 </article>
 
 <article>
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='step2'>Étape 2 - Spécification du batch</h3>
+	<h3 id='step2'>Étape 3 &mdash; Application (Frontend) Configuration</h3>
 	<p>
-	Le designer doit spécifier le batch de création ainsi que les variables globales utilisées dans le batch dans le fichier application/js/specific.js.
-	La valeur de la varable g_execbatch à la ligne 3 doit être <code>true</code>.
+		The creation batch and the global variables it refers to must be specified in the frontend's 
+		<code>application/js/specific.js</code> file. Also, the g_execbatch variable on line 3 must be
+		set to <i>true</i>.
 	</p>
-		<img src='../assets/img/autocreate/specific_js.jpg' width='50%'/>
+	<img src='../assets/img/autocreate/specific_js.jpg'/>
 </article>
 
 <article>
