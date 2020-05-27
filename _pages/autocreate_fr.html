@@ -76,9 +76,10 @@ sidebar:
 	<h3 id='batchDetails'>Détails du batch de création de l'étape 2</h3>
 	<h4>Création du projet pour la cohorte</h4>
 	<p>
-		Dans notre exemple un projet pour la cohorte sera créé si il n'existe pas déjà. Son code et 
-		son libellé seront la valeur de la variable globale définie dans le fichier <i>specific.js</i>
-		(année-mois du système).
+		Dans notre exemple un projet pour la cohorte sera créé si il n'existe pas déjà (si il s'agit du 
+		premier étudiant de cette cohorte à se connecter). Le code et libellé du projet sont composés de
+		l'année + mois du système (donc une nouvelle cohorte à tous les mois) tel que spécifié par la 
+		variable globale définie dans le fichier <i>specific.js</i>.
 	</p>
 	<img src='../assets/img/autocreate/create-project.jpg'/>
 
@@ -89,13 +90,13 @@ sidebar:
 	<img src='../assets/img/autocreate/share-tree.jpg'/>
 
 	<h4>Mise à jour des ressources profil dans le portfolio</h4>
-	<p>Dans notre modèle de portfolio, il y a le nom, prénom et couriel de l'étudiant.</p>
+	<p>Dans notre modèle de portfolio, nous voulons pré-remplir le nom et le couriel de l'étudiant.</p>
 	<img src='../assets/img/autocreate/update-resources.jpg'/>
 
 	<h4>Départage du portfolio d'avec l'étudiant dans le rôle <i>designer</i></h4>
 	<p>
-		Le création du portfolio par l'étudiant en avait fait le designer. Or l'étudiant ne doit pas
-		avoir plus d'un rôle dans son portfolio.
+		Le création automatique du portfolio à partir du compte de l'étudiant en avait fait le designer. 
+		Or l'étudiant ne doit pas avoir plus d'un rôle dans son portfolio.
 	</p>
 	<img src='../assets/img/autocreate/unshare-portfolio.jpg'/>
 
