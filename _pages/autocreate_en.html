@@ -1,34 +1,37 @@
 ---
 layout: archive
-permalink: /autocreate_fr/
-title: "Création automatique"
+permalink: /autocreate_en/
+title: "Automatic Creation"
 sidebar:
- nav: "autocreate_fr"
+ nav: "autocreate_en"
 ---
 <p>
-	Il est possible d'automatiser la création d'un portfolio lors de la première connexion d'un 
-	utilisateur. Dans ce cas Karuta exécutera un batch créé puis spécifié par le designer dans le fichier 
-	<i>application/js/specific.js</i>.
+	It is possible to automate the creation of a portfolio upon the fist time a user logs into Karuta. In
+	that case, Karuta will executre a batch created by the designer and the specified in the 
+	<i>application/js/specific.js</i> file.
 </p>
 <article>
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='step1'>Condition d'exécution</h3>
+	<h3 id='step1'>Execution Condition</h3>
 	<p>
-		Pour que le batch de création s'exécute lors de la première connexion de l'utilisateur, ce dernier doit avoir le droit de création qui lui sera retiré à la fin de l'exécution du batch.
-		Il doit également avoir <code>xlimited</code> dans le champ Autre.
+		For the creation batch to execute upon the user's fist connection, the user account must have the 
+		Creator	right &mdash; which should be removed at the end of the batch execution. The account must
+		also have the <code>xlimited</code> instruction in the field Other.
 	</p>
-		<img src='../assets/img/autocreate/usager.jpg' width='50%'/>
+		<img src='../assets/img/autocreate/compte_utilisateur_en.png' width='50%'/>
 	<p>
-		<b>Remarque</b> : si CAS est utilisé, Karuta créera automatiquement l'utilisateur avec comme username l'identifiant CAS avec le droit de création et <code>xlimited</code> dans le champ Autre
+		NOTE: if CAS is used, Karuta automatically creates the user account with the CAS identifier
+		as username, and then sets the Creator right and <code>xlimited</code> instruction the field Other.
 	</p>
 </article>
 
 <article>
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
 
-	<h3 id='step1'>Étape 0 - Configuration du backend</h3>
+	<h3 id='step1'>Step 0 &mdash; Backend Configuration</h3>
 	<p>
-		Dans le fichier de configuration <code>configKaruta.properties</code> du backend il doit y avoir les valeurs suivantes:
+		In the backend's <code>configKaruta.properties</code> configuration file, the following values must
+		be set:
 		<ul>
 			<li>casCreateAccount=y</li>
 			<li>createAsDesigner=y</li>
@@ -38,21 +41,19 @@ sidebar:
 
 <article>
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
-	<h3 id='step1'>Étape 1 - Écriture du batch de création</h3>
+	<h3 id='step1'>Step 1 &mdash; Writing the Creation Batch</h3>
 	<p>
-		Le batch doit inclure la création du ou des portfolios de l'utilisateur, le partage avec cet utilisateur dans le rôle désiré.
-		Il doit se terminer par :
+		The batch must include the instructions to create one or more portfolios for the user and then
+		share these portfolios with said user in the desired role. It must end with:
+	</p>
 		<ol>
-			<li> Retirer le droit de Créateur de l'utilisateur&nbsp;;</li>
-			<li> Départager les portfolios créés du l'utilisateur dans le rôle <i>designer</i>&nbsp;;</li>
-			<li> Changer le propriétaire des portfolios créés pour root.</li>
+			<li> Removing the user's Creator right;</li>
+			<li> Unsharing the new portfolios from the user in the <i>designer</i> role;</li>
+			<li> Changing the ownership of the new portfolios to root.</li>
 		</ol>
-		Exemple de batch de création automatique
-	</p>
+	<p>Automatic creation bacth example:</p>
 	<img src='../assets/img/autocreate/batch.jpg'/>
-	<p>
-	Téléchargez ce modèle de batch <b><a href='../assets/img/autocreate/batch-creation.xml'>ici</a></b>.
-	</p>
+	<p>	Download this batch model <b><a href='../assets/img/autocreate/batch-creation.xml'>here</a></b>.</p>
 </article>
 
 <article>
