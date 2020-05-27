@@ -14,12 +14,14 @@ sidebar:
 	<a style='float:right' href='#top'><img src='../assets/img/arrow-up.png'/></a>
 	<h3 id='step1'>Condition d'exécution</h3>
 	<p>
-		Pour que le batch de création s'exécute lors de la première connexion de l'utilisateur, ce dernier doit avoir le droit de création qui lui sera retiré à la fin de l'exécution du batch.
+		Pour que le batch de création s'exécute lors de la première connexion de l'utilisateur, ce 
+		dernier doit avoir le droit de création qui lui sera retiré à la fin de l'exécution du batch.
 		Il doit également avoir <code>xlimited</code> dans le champ Autre.
 	</p>
 		<img src='../assets/img/autocreate/usager.jpg' width='50%'/>
 	<p>
-		<b>Remarque</b> : si CAS est utilisé, Karuta créera automatiquement l'utilisateur avec comme username l'identifiant CAS avec le droit de création et <code>xlimited</code> dans le champ Autre
+		REMARQUE : si CAS est utilisé, Karuta créera automatiquement l'utilisateur avec comme username 
+		l'identifiant CAS avec le droit de création et <code>xlimited</code> dans le champ Autre.
 	</p>
 </article>
 
@@ -28,12 +30,13 @@ sidebar:
 
 	<h3 id='step1'>Étape 0 - Configuration du backend</h3>
 	<p>
-		Dans le fichier de configuration <code>configKaruta.properties</code> du backend il doit y avoir les valeurs suivantes:
-		<ul>
-			<li>casCreateAccount=y</li>
-			<li>createAsDesigner=y</li>
-		</ul>
+		Dans le fichier de configuration <code>configKaruta.properties</code> du backend il faut renseigner
+		les valeurs suivantes&nbsp;:
 	</p>
+	<ul>
+		<li>casCreateAccount=y</li>
+		<li>createAsDesigner=y</li>
+	</ul>
 </article>
 
 <article>
@@ -42,17 +45,15 @@ sidebar:
 	<p>
 		Le batch doit inclure la création du ou des portfolios de l'utilisateur, le partage avec cet utilisateur dans le rôle désiré.
 		Il doit se terminer par :
-		<ol>
-			<li> Retirer le droit de Créateur de l'utilisateur&nbsp;;</li>
-			<li> Départager les portfolios créés du l'utilisateur dans le rôle <i>designer</i>&nbsp;;</li>
-			<li> Changer le propriétaire des portfolios créés pour root.</li>
-		</ol>
-		Exemple de batch de création automatique
-	</p>
-	<img src='../assets/img/autocreate/batch.jpg'/>
 	<p>
-	Téléchargez ce modèle de batch <b><a href='../assets/img/autocreate/batch-creation.xml'>ici</a></b>.
-	</p>
+	<ol>
+		<li> Retirer le droit de Créateur de l'utilisateur&nbsp;;</li>
+		<li> Départager les portfolios créés du l'utilisateur dans le rôle <i>designer</i>&nbsp;;</li>
+		<li> Changer le propriétaire des portfolios créés pour root.</li>
+	</ol>
+	<p>Exemple de batch de création automatique&nbsp;:</p>
+	<img src='../assets/img/autocreate/batch.jpg'/>
+	<p>Téléchargez ce modèle de batch <b><a href='../assets/img/autocreate/batch-creation.xml'>ici</a></b>.</p>
 </article>
 
 <article>
